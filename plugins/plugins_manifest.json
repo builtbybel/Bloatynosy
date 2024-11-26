@@ -10,5 +10,7 @@
     "Snap Assist Flyout.json": "Enables or disables the Snap Assist flyout feature for window management.",
     "Uninstall OneDrive.ps1": "Completely uninstalls OneDrive from your system.",
     "Use light theme.json": "Switches the Windows interface to the light theme.",
-    "User Account Control.json": "Adjusts User Account Control (UAC) settings for security and convenience."
+    "User Account Control.json": "Adjusts User Account Control (UAC) settings for security and convenience.",
+    "Windows Rollback Timer.json": "This plugin adjusts the time window available to revert to a previous version of Windows after an upgrade.",
+    "Windows Old Remover.json": "This plugin will remove the ability to roll back a PC to a previous installation of Windows."
 }
