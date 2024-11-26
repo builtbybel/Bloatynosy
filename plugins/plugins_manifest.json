@@ -1,0 +1,14 @@
+{
+    "ChrisTitusApp.ps1": "Chris Titus Tech's Windows Utility - Install Programs, Tweaks, Fixes, and Updates. Dev: https://github.com/ChrisTitusTech/winutil",
+    "Clear Icon Cache.json": "Clears the Windows icon cache to fix display issues or refresh icons.",
+    "Create Restore Point.ps1": "Creates a system restore point to safeguard your current system state.",
+    "File Extensions Visibility.json": "Toggles the visibility of file extensions in Windows Explorer.",
+    "Remove default apps.ps1": "Uninstalls default Windows applications to declutter your system.",
+    "Remove Windows AI.ps1": "Removes Windows AI features, such as Copilot, to optimize performance. Dev: https://raw.githubusercontent.com/zoicware/RemoveWindowsAI/main/RemoveAi.ps1 ",
+    "Restart Explorer.ps1": "Restarts the Windows Explorer process to refresh the desktop and taskbar.",
+    "Restore all built-in apps.ps1": "Reinstalls all default Windows apps that have been removed.",
+    "Snap Assist Flyout.json": "Enables or disables the Snap Assist flyout feature for window management.",
+    "Uninstall OneDrive.ps1": "Completely uninstalls OneDrive from your system.",
+    "Use light theme.json": "Switches the Windows interface to the light theme.",
+    "User Account Control.json": "Adjusts User Account Control (UAC) settings for security and convenience."
+}
