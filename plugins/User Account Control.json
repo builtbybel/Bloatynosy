@@ -1,0 +1,14 @@
+{
+  "PlugID": "Enable User Account Control (UAC)",
+  "PlugInfo": "Check to enable User Account Control (UAC), uncheck to disable UAC. Please only disable this setting if you are absolutely sure you have complete control over your system!! Otherwise, it could open a major security hole in your system.",
+  "PlugCategory": "Security (Plugins)",
+  "PlugCheck": [
+    "reg query HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System /v EnableLUA"
+  ],
+  "PlugDo": [
+    "powershell -Command \"Add-Type -AssemblyName PresentationCore,PresentationFramework; $result = [System.Windows.MessageBox]::Show('Your system will restart in 30 seconds to apply changes. Do you want to proceed?', 'Warning', 'YesNo', 'Warning'); if ($result -eq 'Yes') { Start-Sleep -Seconds 30; reg add HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System /v EnableLUA /t REG_DWORD /d 1 /f; shutdown /r /t 0 }\""
+  ],
+  "PlugUndo": [
+    "powershell -Command \"Add-Type -AssemblyName PresentationCore,PresentationFramework; $result = [System.Windows.MessageBox]::Show('Your system will restart in 30 seconds to apply changes. Do you want to proceed?', 'Warning', 'YesNo', 'Warning'); if ($result -eq 'Yes') { Start-Sleep -Seconds 30; reg add HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System /v EnableLUA /t REG_DWORD /d 0 /f; shutdown /r /t 0 }\""
+  ]
+}
