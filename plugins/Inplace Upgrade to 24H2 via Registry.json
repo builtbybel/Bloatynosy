@@ -1,0 +1,23 @@
+{
+  "PlugID": "Inplace Upgrade to 24H2 via Registry",
+  "PlugInfo": "1. Apply script\n2. Download Windows 11 version 24H2 ISO (via Microsoft site or Fido script) and mount the image.\n3. Click setup.exe and follow the on-screen instructions. \n\nSource: https://github.com/pbatard/rufus/issues/2568#issuecomment-2387934171\nOfficial Documentation: https://support.microsoft.com/en-us/windows/ways-to-install-windows-11-e0edbbfb-cfc5-4011-868b-2ce77ac7c70e",
+  "PlugCategory": "Scripts (optional)",
+  "PlugCheck": [
+    "reg query \"HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\HwReqChk\" /v HwReqChkVars"
+  ],
+  "PlugDo": [
+    "reg add \"HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\HwReqChk\" /f",
+    "reg add \"HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\HwReqChk\" /v HwReqChkVars /t REG_MULTI_SZ /d \"SQ_SecureBootCapable=TRUE\\0SQ_SecureBootEnabled=TRUE\\0SQ_TpmVersion=2\\0SQ_RamMB=8192\" /f",
+    "reg delete \"HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\CompatMarkers\" /f",
+    "reg delete \"HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\Shared\" /f",
+    "reg delete \"HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\TargetVersionUpgradeExperienceIndicators\" /f",
+    "reg add \"HKLM\\SYSTEM\\Setup\\MoSetup\" /f /v AllowUpgradesWithUnsupportedTPMOrCPU /t REG_DWORD /d 1"
+  ],
+  "PlugUndo": [
+    "reg delete \"HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\HwReqChk\" /f",
+    "reg delete \"HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\CompatMarkers\" /f",
+    "reg delete \"HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\Shared\" /f",
+    "reg delete \"HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\TargetVersionUpgradeExperienceIndicators\" /f",
+    "reg delete \"HKLM\\SYSTEM\\Setup\\MoSetup\" /f /v AllowUpgradesWithUnsupportedTPMOrCPU"
+  ]
+}

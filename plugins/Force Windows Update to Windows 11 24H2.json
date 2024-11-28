@@ -1,0 +1,21 @@
+{
+  "PlugID": "Force Windows Update to Windows 11 24H2 (HW-Ready Systems Only)",
+  "PlugInfo": "1. This script unlocks the direct path to Windows 11 24H2 via Windows Update—no Installation Assistant or Media Creation Tool needed!\n2. Tailored for systems meeting official hardware requirements.\n3. After running, a restart will be required. Then, simply head to Windows Update and let the magic happen.",
+  "PlugCategory": "Scripts (optional)",
+  "PlugCheck": [
+    "reg query \"HKLM\\SOFTWARE\\Policies\\Microsoft\\Windows\\WindowsUpdate\" /v ProductVersion"
+  ],
+  "PlugDo": [
+    "reg add \"HKLM\\SOFTWARE\\Policies\\Microsoft\\Windows\\WindowsUpdate\" /f",
+    "reg add \"HKLM\\SOFTWARE\\Policies\\Microsoft\\Windows\\WindowsUpdate\" /v ProductVersion /t REG_SZ /d \"Windows 11\" /f",
+    "reg add \"HKLM\\SOFTWARE\\Policies\\Microsoft\\Windows\\WindowsUpdate\" /v TargetReleaseVersionInfo /t REG_SZ /d \"24H2\" /f",
+    "reg add \"HKLM\\SOFTWARE\\Policies\\Microsoft\\Windows\\WindowsUpdate\" /v TargetReleaseVersion /t REG_DWORD /d 1 /f",
+    "powershell -command \"Add-Type -AssemblyName PresentationFramework; [System.Windows.MessageBox]::Show('Registry updated for Windows 11 24H2! Restart your PC, then head to Windows Update to grab your upgrade.', 'Restart Needed', 'OK', 'Information')\"",
+    "shutdown /r /t 10"
+  ],
+  "PlugUndo": [
+    "reg delete \"HKLM\\SOFTWARE\\Policies\\Microsoft\\Windows\\WindowsUpdate\" /v ProductVersion /f",
+    "reg delete \"HKLM\\SOFTWARE\\Policies\\Microsoft\\Windows\\WindowsUpdate\" /v TargetReleaseVersionInfo /f",
+    "reg delete \"HKLM\\SOFTWARE\\Policies\\Microsoft\\Windows\\WindowsUpdate\" /v TargetReleaseVersion /f"
+  ]
+}
