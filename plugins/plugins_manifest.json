@@ -13,4 +13,7 @@
     "User Account Control.json": "Adjusts User Account Control (UAC) settings for security and convenience.",
     "Windows Rollback Timer.json": "This plugin adjusts the time window available to revert to a previous version of Windows after an upgrade.",
     "Windows Old Remover.json": "This plugin will remove the ability to roll back a PC to a previous installation of Windows."
+    "Force Windows Update to Windows 11 24H2.json": "Forces Windows Update to initiate the upgrade to Windows 11 version 24H2.",
+    "Inplace Upgrade to 24H2 via Registry.json": "Sets registry keys to enable an in-place upgrade to Windows 11 version 24H2.",
+    "Windows 11 24H2 Upgrade (Bypass HW Checks).ps1": "Upgrades to Windows 11 version 24H2 while bypassing hardware compatibility checks. This method leverages the Windows Server variant of the Windows setup, which skips most hardware compatibility checks. It allows Windows 11 to be installed on unsupported PCs, bypassing the usual system requirements. Importantly, while the setup runs in server mode, it installs the standard Windows 11 (not the server version)."
 }
