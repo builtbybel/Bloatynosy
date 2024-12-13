@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Bloatynosy.Properties {
+namespace BloatynosyNue.Properties {
     using System;
     
     
@@ -22,7 +22,7 @@ namespace Bloatynosy.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    public class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,10 +36,10 @@ namespace Bloatynosy.Properties {
         ///   Gibt die zwischengespeicherte ResourceManager-Instanz zurück, die von dieser Klasse verwendet wird.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Bloatynosy.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("BloatynosyNue.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -51,7 +51,7 @@ namespace Bloatynosy.Properties {
         ///   Ressourcenzuordnungen, die diese stark typisierte Ressourcenklasse verwenden.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,37 +63,20 @@ namespace Bloatynosy.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap GitHubIcon {
+        public static System.Drawing.Bitmap assetHeader {
             get {
-                object obj = ResourceManager.GetObject("GitHubIcon", resourceCulture);
+                object obj = ResourceManager.GetObject("assetHeader", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die 1527c705-839a-4832-9118-54d4Bd6a0c89
-        ///c5e2524a-ea46-4f67-841f-6a9465d9d515
-        ///E2A4F912-2574-4A75-9BB0-0D023378592B
-        ///F46D4000-FD22-4DB4-AC8E-4E1DDDE828FE
-        ///InputApp
-        ///Microsoft.AAD.BrokerPlugin
-        ///Microsoft.AccountsControl
-        ///Microsoft.Advertising.Xaml
-        ///Microsoft.AsyncTextService
-        ///Microsoft.BioEnrollment
-        ///Microsoft.CredDialogHost
-        ///Microsoft.ECApp
-        ///Microsoft.LockApp
-        ///Microsoft.MicrosoftEdge
-        ///Microsoft.MicrosoftEdgeDevToolsClient
-        ///Microsoft.NET
-        ///Microsoft.PPIProjection
-        ///Microsoft.Services.Store.Engagement
-        ///Microsoft.V [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
-        internal static string systemApps {
+        public static System.Drawing.Bitmap assetUAC {
             get {
-                return ResourceManager.GetString("systemApps", resourceCulture);
+                object obj = ResourceManager.GetObject("assetUAC", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }

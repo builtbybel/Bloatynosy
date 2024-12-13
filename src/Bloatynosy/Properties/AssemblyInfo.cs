@@ -1,16 +1,17 @@
 ﻿using System.Reflection;
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // Allgemeine Informationen über eine Assembly werden über die folgenden
 // Attribute gesteuert. Ändern Sie diese Attributwerte, um die Informationen zu ändern,
 // die einer Assembly zugeordnet sind.
-[assembly: AssemblyTitle("Bloatynosy")]
-[assembly: AssemblyDescription("The real Windows 11 Copilot")]
+[assembly: AssemblyTitle("BloatynosyNue")]
+[assembly: AssemblyDescription("Bloatynosy Nue")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Builtbybel")]
-[assembly: AssemblyProduct("Bloatynosy")]
-[assembly: AssemblyCopyright("Copyright ©  2023 Builtbybel")]
-[assembly: AssemblyTrademark("Builtbybel")]
+[assembly: AssemblyProduct("BloatynosyNue")]
+[assembly: AssemblyCopyright("Copyright ©  2024")]
+[assembly: AssemblyTrademark("A Belim app creation")]
 [assembly: AssemblyCulture("")]
 
 // Durch Festlegen von ComVisible auf FALSE werden die Typen in dieser Assembly
@@ -19,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // Die folgende GUID bestimmt die ID der Typbibliothek, wenn dieses Projekt für COM verfügbar gemacht wird
-[assembly: Guid("44cafceb-0f6d-487f-9f5f-63f230dbb069")]
+[assembly: Guid("73427bec-fd4f-41fb-a985-66f0f36338c2")]
 
 // Versionsinformationen für eine Assembly bestehen aus den folgenden vier Werten:
 //
@@ -28,8 +29,5 @@ using System.Runtime.InteropServices;
 //      Buildnummer
 //      Revision
 //
-// Sie können alle Werte angeben oder Standardwerte für die Build- und Revisionsnummern verwenden,
-// indem Sie "*" wie unten gezeigt eingeben:
-// [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("2024.4.10")]
-[assembly: AssemblyFileVersion("2024.4.10")]
+[assembly: AssemblyVersion("0.89.0.170")]
+[assembly: AssemblyFileVersion("0.89.0.170")]

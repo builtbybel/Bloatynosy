@@ -1,0 +1,438 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ctl_btnBack" xml:space="preserve">
+    <value>Zurück</value>
+  </data>
+  <data name="ctl_btnDumputer" xml:space="preserve">
+    <value>Entsorgen</value>
+  </data>
+  <data name="ctl_btnExperience" xml:space="preserve">
+    <value>Erleben</value>
+  </data>
+  <data name="ctl_lblHeader" xml:space="preserve">
+    <value>Windows 11 richtig einstellen</value>
+  </data>
+  <data name="ctl_lblSteps" xml:space="preserve">
+    <value>Ich möchte gern</value>
+  </data>
+  <data name="ctl_lblSubHeader" xml:space="preserve">
+    <value>Hebe die Privatsphäre und Personalisierung von Windows 11 auf ein neues Level, entferne überflüssige Programme und nutze Community-Plugins für mehr Power.</value>
+  </data>
+  <data name="formDumputer_tt_btnRemove" xml:space="preserve">
+    <value>Entfernen</value>
+  </data>
+  <data name="formDumputer_ctl_lblHeader" xml:space="preserve">
+    <value>App-Debloat</value>
+  </data>
+  <data name="formDumputer_ctl_lblSort" xml:space="preserve">
+    <value>Sortieren</value>
+  </data>
+  <data name="formDumputer_ctl_lblSubHeader" xml:space="preserve">
+    <value>Bewege Apps vom linken Korb in den rechten Mülleimer, um sie zu löschen.</value>
+  </data>
+  <data name="formDumputer_ctl_textBoxSearch" xml:space="preserve">
+    <value>Filtern</value>
+  </data>
+  <data name="formDumputer_status_Loading" xml:space="preserve">
+    <value>Lade APPX-Pakete...</value>
+  </data>
+  <data name="formExperience_ctl_btnApply" xml:space="preserve">
+    <value>Akzeptieren und Anwenden</value>
+  </data>
+  <data name="formExperience_ctl_btnRevert" xml:space="preserve">
+    <value>Ablehnen</value>
+  </data>
+  <data name="formExperience_ctl_lblHeader" xml:space="preserve">
+    <value>Erlebnis personalisieren</value>
+  </data>
+  <data name="formExperience_ctl_lblSort" xml:space="preserve">
+    <value>Sortieren</value>
+  </data>
+  <data name="formExperience_ctl_lblSubHeader" xml:space="preserve">
+    <value>Klicke auf 'Akzeptieren und Anwenden', um fortzufahren, oder auf 'Ablehnen', um die Standardeinstellungen beizubehalten. Einzelne Anpassungen können ebenfalls vorgenommen werden</value>
+  </data>
+  <data name="formExperience_ctl_textBoxSearch" xml:space="preserve">
+    <value>Filtern</value>
+  </data>
+  <data name="formExperience_statusPermissions" xml:space="preserve">
+    <value>Fehler bei der Aktualisierung des Funktionsstatus aufgrund fehlender Berechtigungen.</value>
+  </data>
+  <data name="formExperience_status_Accepted" xml:space="preserve">
+    <value>Akzeptiert</value>
+  </data>
+  <data name="formExperience_status_Declined" xml:space="preserve">
+    <value>Abgelehnt</value>
+  </data>
+  <data name="formExperience_status_Disabled" xml:space="preserve">
+    <value>Deaktiviert</value>
+  </data>
+  <data name="formExperience_status_Enabled" xml:space="preserve">
+    <value>Aktiviert</value>
+  </data>
+  <data name="formPluginsReview_ctl_btnRun" xml:space="preserve">
+    <value>Ausführen</value>
+  </data>
+  <data name="formPluginsReview_ctl_btnViewSc" xml:space="preserve">
+    <value>Code anzeigen</value>
+  </data>
+  <data name="formPluginsReview_ctl_lblHeader" xml:space="preserve">
+    <value>Überprüfe deine Auswahl</value>
+  </data>
+  <data name="formPlugins_ctl_btnNext" xml:space="preserve">
+    <value>Weiter</value>
+  </data>
+  <data name="formPlugins_ctl_btnPluginStore" xml:space="preserve">
+    <value>Store besuchen</value>
+  </data>
+  <data name="formPlugins_ctl_lblHeader" xml:space="preserve">
+    <value>Erweiterungen</value>
+  </data>
+  <data name="formPlugins_ctl_lblSubHeader" xml:space="preserve">
+    <value>Entdecke neue Möglichkeiten mit den Bloatynosy Nue Plugins</value>
+  </data>
+  <data name="tt_btnAboutApp" xml:space="preserve">
+    <value>Über diese App</value>
+  </data>
+  <data name="tt_btnDumputer" xml:space="preserve">
+    <value>Entferne vorinstallierte Apps auf Windows 11 (24H2 und 23H2), um dein System aufzuräumen.</value>
+  </data>
+  <data name="tt_btnExperience" xml:space="preserve">
+    <value>Passe die Windows 11-Einstellungen für mehr Privatsphäre, Kontrolle und Personalisierung an.</value>
+  </data>
+  <data name="tt_btnLogger" xml:space="preserve">
+    <value>Benachrichtigungen</value>
+  </data>
+  <data name="tt_btnPlugins" xml:space="preserve">
+    <value>Plugins</value>
+  </data>
+  <data name="_adsFileExplorerAds" xml:space="preserve">
+    <value>Werbung im Windows Explorer deaktivieren</value>
+  </data>
+  <data name="_adsFileExplorerAds_desc" xml:space="preserve">
+    <value>Diese Funktion deaktiviert die Werbung im Windows Explorer.</value>
+  </data>
+  <data name="_adsFinishSetupAds" xml:space="preserve">
+    <value>Werbung die bei Abschluss der Einrichtung erscheint deaktivieren</value>
+  </data>
+  <data name="_adsFinishSetupAds_desc" xml:space="preserve">
+    <value>Diese Funktion deaktiviert die Werbung für das Abschließen der Einrichtung des Gerätes.</value>
+  </data>
+  <data name="_adsLockScreenAds" xml:space="preserve">
+    <value>Tipps und Werbung für den Sperrbildschirm deaktivieren</value>
+  </data>
+  <data name="_adsLockScreenAds_desc" xml:space="preserve">
+    <value>Diese Funktion deaktiviert Tipps und Werbung auf dem Sperrbildschirm.</value>
+  </data>
+  <data name="_adsPersonalizedAds" xml:space="preserve">
+    <value>Personalisierte Werbung deaktivieren</value>
+  </data>
+  <data name="_adsPersonalizedAds_desc" xml:space="preserve">
+    <value>Durch diese Funktion wird die personalisierte Werbung deaktiviert.</value>
+  </data>
+  <data name="_adsSettingsAds" xml:space="preserve">
+    <value>Werbung in den Windows-Einstellungen deaktivieren</value>
+  </data>
+  <data name="_adsSettingsAds_desc" xml:space="preserve">
+    <value>Diese Funktion deaktiviert die Werbung in den Einstellungen.</value>
+  </data>
+  <data name="_adsStartmenuAds" xml:space="preserve">
+    <value>Werbung im Startmenü deaktivieren</value>
+  </data>
+  <data name="_adsStartmenuAds_desc" xml:space="preserve">
+    <value>Diese Funktion deaktiviert die Werbung im Startmenü.</value>
+  </data>
+  <data name="_adsTailoredExperiences" xml:space="preserve">
+    <value>Maßgeschneidertes Nutzererlebnis deaktivieren</value>
+  </data>
+  <data name="_adsTailoredExperiences_desc" xml:space="preserve">
+    <value>Für das maßgeschneiderte Nurtzererlebnis ist es Microsoft möglich, Informationen von Ihnen zu erhalten, um personalisierte Tipps, Werbung und Empfehlungen bereitzustellen. Viele Leute würden dies als Telemetrie oder sogar Spionage bezeichnen.</value>
+  </data>
+  <data name="_adsTipsAndSuggestions" xml:space="preserve">
+    <value>Allgemeine Tipps und Werbung deaktivieren</value>
+  </data>
+  <data name="_adsTipsAndSuggestions_desc" xml:space="preserve">
+    <value>Diese Funktion deaktiviert allgemeine Tipps und Werbung.</value>
+  </data>
+  <data name="_adsWelcomeExperienceAds" xml:space="preserve">
+    <value>Werbung in "Erste Schritte" deaktivieren</value>
+  </data>
+  <data name="_adsWelcomeExperienceAds_desc" xml:space="preserve">
+    <value>Diese Funktion deaktiviert die Werbung im Willkommenserlebnis.</value>
+  </data>
+  <data name="_aiCopilotTaskbar" xml:space="preserve">
+    <value>Copilot nicht in der Taskleiste anzeigen</value>
+  </data>
+  <data name="_aiCopilotTaskbar_desc" xml:space="preserve">
+    <value>Diese Funktion wird den Copilot in der Taskleiste deaktivieren.</value>
+  </data>
+  <data name="_aiRecallMachine" xml:space="preserve">
+    <value>Recall nicht erlauben, systemweite Schnappschüsse zu speichern</value>
+  </data>
+  <data name="_aiRecallMachine_desc" xml:space="preserve">
+    <value>Diese Funktion wird Recall daran hindern systemweit Schnappschüsse zu speichern.</value>
+  </data>
+  <data name="_aiRecallUser" xml:space="preserve">
+    <value>Recall nicht erlauben, Schnappschüsse Ihres Bildschirms zu speichern</value>
+  </data>
+  <data name="_aiRecallUser_desc" xml:space="preserve">
+    <value>Diese Funktion verhindert, dass Recall Schnappschüsse Ihres Bildschirms speichert.</value>
+  </data>
+  <data name="_gamingGameDVR" xml:space="preserve">
+    <value>GameDVR deaktivieren</value>
+  </data>
+  <data name="_gamingGameDVR_desc" xml:space="preserve">
+    <value>Diese Funktion wird GameDVR deaktivieren.</value>
+  </data>
+  <data name="_gamingPowerThrottling" xml:space="preserve">
+    <value>Leistungsdrosselung deaktivieren</value>
+  </data>
+  <data name="_gamingPowerThrottling_desc" xml:space="preserve">
+    <value>Diese Funktion wird die Leistungsdrosselung unterbinden.</value>
+  </data>
+  <data name="_gamingVisualFX" xml:space="preserve">
+    <value>VisualFX deaktivieren</value>
+  </data>
+  <data name="_gamingVisualFX_desc" xml:space="preserve">
+    <value>Diese Funktion wird VisualFX deaktivieren.</value>
+  </data>
+  <data name="_privacyActivityHistory" xml:space="preserve">
+    <value>Aktivitätsverlauf ausschalten</value>
+  </data>
+  <data name="_privacyLocationTracking" xml:space="preserve">
+    <value>Mein Gerät finden deaktivieren</value>
+  </data>
+  <data name="_privacyLocationTracking_desc" xml:space="preserve">
+    <value>Diese Funktion verhindert, dass Sie Ihr Gerät aus der Ferne orten können.</value>
+  </data>
+  <data name="_privacyPrivacyExperience" xml:space="preserve">
+    <value>Datenschutzeinstellugs-Erlebnis beim Anmelden deaktivieren</value>
+  </data>
+  <data name="_privacyPrivacyExperience_desc" xml:space="preserve">
+    <value>Diese Funktion deaktiviert das Erlebnis der Datenschutzeinstellungen bei der Anmeldung.</value>
+  </data>
+  <data name="_privacyTelemetry" xml:space="preserve">
+    <value>Telemetrie deaktivieren</value>
+  </data>
+  <data name="_privacyTelemetry_desc" xml:space="preserve">
+    <value>Microsoft erlaubt es Benutzern von Windows 10/11 in der Home Edition nicht, die Erfassung von Telemetriedaten vollständig zu deaktivieren. Diese Benutzer können jedoch weiterhin einige optionale Datenerfassungen über die Systemeinstellungen einschränken.</value>
+  </data>
+  <data name="_uiFullContextMenus" xml:space="preserve">
+    <value>Vollständige Kontextmenüs in Windows 11 anzeigen</value>
+  </data>
+  <data name="_uiFullContextMenus_desc" xml:space="preserve">
+    <value>Diese Funktion gibt Ihnen die Möglichkeit immer ein vollständiges Kontextmenü anzuzeigen. (klassisches Startmenü)</value>
+  </data>
+  <data name="_uiLockScreen" xml:space="preserve">
+    <value>Keinen personalisierten Sperrbildschirm verwenden</value>
+  </data>
+  <data name="_uiLockScreen_desc" xml:space="preserve">
+    <value>Diese Funktion wird den personalisieren Sperrbildschirm deaktivieren.</value>
+  </data>
+  <data name="_uiSearchboxTaskbarMode" xml:space="preserve">
+    <value>Suche in Taskleiste ausblenden</value>
+  </data>
+  <data name="_uiSearchboxTaskbarMode_desc" xml:space="preserve">
+    <value>Diese Funktion wird das Suchfeld in der Taskleiste ausblenden.</value>
+  </data>
+  <data name="_uiShowOrHideMostUsedApps" xml:space="preserve">
+    <value>Meistverwendete Apps ausblenden</value>
+  </data>
+  <data name="_uiShowOrHideMostUsedApps_desc" xml:space="preserve">
+    <value>Diese Funktion wird verhindern, dass die meistverwendeten Apps angezeigt werden.</value>
+  </data>
+  <data name="_uiShowTaskViewButton" xml:space="preserve">
+    <value>Symbol für aktive Anwendungen in der Taskleiste ausblenden</value>
+  </data>
+  <data name="_uiShowTaskViewButton_desc" xml:space="preserve">
+    <value>Diese Funktion wird das Symbol für aktive Anwendungen in der Taskleiste deaktivieren.</value>
+  </data>
+  <data name="_uiStartLayout" xml:space="preserve">
+    <value>Mehr angeheftete Elemente anzeigen</value>
+  </data>
+  <data name="_uiStartLayout_desc" xml:space="preserve">
+    <value>Diese Funktion wird das Startmenü derart ändern, dass mehr angeheftete Elemente und weniger Empfehlungen angezeigt werden. Wenn deaktiviert, werden mehr Empfehlungen und weniger angeheftete Elemente angezeigt.</value>
+  </data>
+  <data name="_uiTaskbarAlignment" xml:space="preserve">
+    <value>Linksbündige Taskleistenausrichtung aktivieren</value>
+  </data>
+  <data name="_uiTaskbarAlignment_desc" xml:space="preserve">
+    <value>Diese Funktion wird die linksbündige Ausrichtung der Symbole in der Taskleiste aktivieren</value>
+  </data>
+  <data name="formDumputer_ctl_lblDetails" xml:space="preserve">
+    <value>Details zur ausgewählten App</value>
+  </data>
+  <data name="formDumputer_status_Removing" xml:space="preserve">
+    <value>Entfernung wird versucht</value>
+  </data>
+  <data name="formDumputer_status_successRemove" xml:space="preserve">
+    <value>Erfolgreich entfernt</value>
+  </data>
+  <data name="formDumputer_status_failedRemove" xml:space="preserve">
+    <value>Fehler beim Entfernen</value>
+  </data>
+  <data name="formDumputer_status_noItems" xml:space="preserve">
+    <value>Noch keine Elemente im Papierkorb</value>
+  </data>
+  <data name="formDumputer_status_Refreshing" xml:space="preserve">
+    <value>Aktualisiere...</value>
+  </data>
+  <data name="formDumputer_tt_btnRefresh" xml:space="preserve">
+    <value>Aktualisieren</value>
+  </data>
+  <data name="formDumputer_tt_btnAdd" xml:space="preserve">
+    <value>Hinzufügen</value>
+  </data>
+  <data name="formDumputer_ctl_btnUninstall" xml:space="preserve">
+    <value>Papierkorb leeren</value>
+  </data>
+  <data name="_privacyActivityHistory_desc" xml:space="preserve">
+    <value>Deaktiviere den Aktivitätsverlauf (verhindert, dass Windows deine Aktivitäten protokolliert und speichert)</value>
+  </data>
+  <data name="formPluginsReview_status_Summary" xml:space="preserve">
+    <value>Es wurden keine Plugins ausgewählt. Wähle Plugins aus, um sie anzuwenden oder zurückzusetzen.</value>
+  </data>
+  <data name="formPluginsReview_status_tobeApplied" xml:space="preserve">
+    <value>Zur Anwendung bereit</value>
+  </data>
+  <data name="formPluginsReview_status_tobeReverted" xml:space="preserve">
+    <value>Zurücksetzen steht aus</value>
+  </data>
+  <data name="ctl_Donate" xml:space="preserve">
+    <value>Spenden</value>
+  </data>
+  <data name="ctl_DonationPrompts" xml:space="preserve">
+    <value>Genießt du Bloatynosy Nue? Wenn du das Projekt unterstützen möchtest, hilft jede Spende, es am Laufen zu halten. Vielen Dank!;Hat dir Bloatynosy Nue den Tag erleichtert? Überlege, eine kleine Spende zu geben, um die Magie am Leben zu halten! Jeder Beitrag hilft!;Gefällt dir, was Bloatynosy Nue macht? Schick eine kleine Spende rüber und hilf dabei, es noch besser zu machen! Vielen Dank im Voraus! 😄;Genießt du Windows 11 dank Bloatynosy Nue? Eine Spende wäre großartig, um das Projekt am Leben zu halten. Vieles wird geschätzt!;Liebst du die Ergebnisse von Bloatynosy Nue? Zeig deine Unterstützung mit einer Spende. Es hilft mir wirklich, es weiter zu verbessern!;Hat dir Bloatynosy Nue geholfen? Vielleicht magst du eine kleine Spende senden, um mir zu helfen, dieses großartige Tool weiterzuentwickeln. Jeder Beitrag zählt!;Wenn Bloatynosy Nue dein Leben erleichtert hat, geht eine Spende wirklich weit, um sicherzustellen, dass ich es weiterhin verbessern kann. Vielen Dank für die Unterstützung!</value>
+  </data>
+  <data name="ctl_DonateAsk" xml:space="preserve">
+    <value>Möchest du spenden?</value>
+  </data>
+  <data name="formPlugins_ctl_lblInstalled" xml:space="preserve">
+    <value>Installiert</value>
+  </data>
+  <data name="formPlugins_status_notReady" xml:space="preserve">
+    <value>Die Plugin-Umgebung ist noch nicht bereit.\n\nMöchtest du den Store aktivieren und die erforderlichen Komponenten herunterladen?</value>
+  </data>
+  <data name="formPlugins_status_Ready" xml:space="preserve">
+    <value>Download abgeschlossen! \nDer Store ist bereit zur Verwendung.</value>
+  </data>
+  <data name="formDumputer_status_countPackages" xml:space="preserve">
+    <value>App-Pakete geladen:</value>
+  </data>
+</root>
