@@ -118,323 +118,323 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ctl_btnBack" xml:space="preserve">
-    <value>Back</value>
+    <value>Indietro</value>
   </data>
   <data name="ctl_btnDumputer" xml:space="preserve">
-    <value>Dumputer™</value>
+    <value>Cassonetto™</value>
   </data>
   <data name="ctl_btnExperience" xml:space="preserve">
-    <value>Experience</value>
+    <value>Esperienza</value>
   </data>
   <data name="ctl_lblHeader" xml:space="preserve">
-    <value>Set up Windows 11</value>
+    <value>Imposta Windows 11</value>
   </data>
   <data name="ctl_lblSteps" xml:space="preserve">
-    <value>I would like to</value>
+    <value>Vorrei</value>
   </data>
   <data name="ctl_lblSubHeader" xml:space="preserve">
-    <value>Level up Windows 11 privacy and personalization, declutter by removing bloatware, and supercharge functionality with community plugins.</value>
+    <value>Migliora la privacy e la personalizzazione di Windows 11, fai ordine rimuovendo il bloatware e potenzia le funzionalità con i plugin della community.</value>
   </data>
   <data name="formDumputer_tt_btnRemove" xml:space="preserve">
-    <value>Remove</value>
+    <value>Rimuovi</value>
   </data>
   <data name="formDumputer_ctl_lblHeader" xml:space="preserve">
-    <value>Application Dump</value>
+    <value>Dump applicazione</value>
   </data>
   <data name="formDumputer_ctl_lblSort" xml:space="preserve">
-    <value>Sort</value>
+    <value>Ordina</value>
   </data>
   <data name="formDumputer_ctl_lblSubHeader" xml:space="preserve">
-    <value>Move apps from the left basket to the right trash can to delete them</value>
+    <value>Sposta le app dal cestino di sinistra al cestino di destra per eliminarle</value>
   </data>
   <data name="formDumputer_ctl_textBoxSearch" xml:space="preserve">
-    <value>Filter</value>
+    <value>Filtro</value>
   </data>
   <data name="formDumputer_status_Loading" xml:space="preserve">
-    <value>Loading appx packages...</value>
+    <value>Caricamento pacchetti appx...</value>
   </data>
   <data name="formExperience_ctl_btnApply" xml:space="preserve">
-    <value>Enabled All</value>
+    <value>Accetta e applica</value>
   </data>
   <data name="formExperience_ctl_btnRevert" xml:space="preserve">
-    <value>Disable All</value>
+    <value>Declina</value>
   </data>
   <data name="formExperience_ctl_lblHeader" xml:space="preserve">
-    <value>Customize Experience</value>
+    <value>Personalizza esperienza</value>
   </data>
   <data name="formExperience_ctl_lblSort" xml:space="preserve">
-    <value>Sort</value>
+    <value>Ordina</value>
   </data>
   <data name="formExperience_ctl_lblSubHeader" xml:space="preserve">
-    <value>Click 'Enable All' to apply all changes, or 'Disable All' to revert to the default settings. You can also make individual adjustments as needed.</value>
+    <value>Per procedere seleziona "Accetta e applica" o "Rifiuta" per mantenere le impostazioni predefinite. È inoltre possibile apportare modifiche individuali.</value>
   </data>
   <data name="formExperience_ctl_textBoxSearch" xml:space="preserve">
-    <value>Filter</value>
+    <value>Filtro</value>
   </data>
   <data name="formExperience_statusPermissions" xml:space="preserve">
-    <value>Failed to update feature status due to insufficient permissions.</value>
+    <value>Impossibile aggiornare lo stato della funzionalità a causa di autorizzazioni insufficienti.</value>
   </data>
   <data name="formExperience_status_Disabled" xml:space="preserve">
-    <value>Disabled</value>
+    <value>Disabilitato</value>
   </data>
   <data name="formExperience_status_Enabled" xml:space="preserve">
-    <value>Enabled</value>
+    <value>Abilitato</value>
   </data>
   <data name="formPluginsReview_ctl_btnRun" xml:space="preserve">
-    <value>Run</value>
+    <value>Esegui</value>
   </data>
   <data name="formPluginsReview_ctl_btnViewSc" xml:space="preserve">
-    <value>View script</value>
+    <value>Visualizza script</value>
   </data>
   <data name="formPluginsReview_ctl_lblHeader" xml:space="preserve">
-    <value>Review your selections</value>
+    <value>Rivedi le tue selezioni</value>
   </data>
   <data name="formPlugins_ctl_btnNext" xml:space="preserve">
-    <value>Next</value>
+    <value>Avanti</value>
   </data>
   <data name="formPlugins_ctl_btnPluginStore" xml:space="preserve">
-    <value>Visit Store</value>
+    <value>Visita Store</value>
   </data>
   <data name="formPlugins_ctl_lblHeader" xml:space="preserve">
-    <value>Extensions</value>
+    <value>Estensioni</value>
   </data>
   <data name="formPlugins_ctl_lblSubHeader" xml:space="preserve">
-    <value>More Possibilities with Bloatynosy Nue 
-Plugins</value>
+    <value>Più possibilità con i plugin
+Bloatynosy Nue</value>
   </data>
   <data name="tt_btnAboutApp" xml:space="preserve">
-    <value>About this app</value>
+    <value>Info su questa app</value>
   </data>
   <data name="tt_btnDumputer" xml:space="preserve">
-    <value>Remove pre-installed apps on Windows 11 (24H2 and 23H2) to declutter your system</value>
+    <value>Per mettere ordine nel sistema rimuovi le app preinstallate in Windows 11 (24H2 e 23H2)</value>
   </data>
   <data name="tt_btnExperience" xml:space="preserve">
-    <value>Customize Windows 11 settings for enhanced privacy, control, and personalization</value>
+    <value>Personalizza le impostazioni di Windows 11 per migliorare privacy, controllo e personalizzazione</value>
   </data>
   <data name="tt_btnLogger" xml:space="preserve">
-    <value>Notifications</value>
+    <value>Notifiche</value>
   </data>
   <data name="tt_btnPlugins" xml:space="preserve">
-    <value>Plugins</value>
+    <value>Plugin</value>
   </data>
   <data name="_adsFileExplorerAds" xml:space="preserve">
-    <value>Disable File Explorer Ads</value>
+    <value>Disattiva annunci di Esplora file</value>
   </data>
   <data name="_adsFileExplorerAds_desc" xml:space="preserve">
-    <value>This feature will disable ads in File Explorer.</value>
+    <value>Questa funzione disabiliterà gli annunci in Esplora file.</value>
   </data>
   <data name="_adsFinishSetupAds" xml:space="preserve">
-    <value>Disable Finish Setup Ads</value>
+    <value>Disabilita annunci fine installazione</value>
   </data>
   <data name="_adsFinishSetupAds_desc" xml:space="preserve">
-    <value>This feature will disable the "Lets finish setting up your device" and other advertising.</value>
+    <value>Questa funzione disabiliterà "Completiamo la configurazione del tuo dispositivo" e altre pubblicità.</value>
   </data>
   <data name="_adsLockScreenAds" xml:space="preserve">
-    <value>Disable Lock Screen Tips and Ads</value>
+    <value>Disabilita suggerimenti e annunci nella schermata di blocco</value>
   </data>
   <data name="_adsLockScreenAds_desc" xml:space="preserve">
-    <value>This feature will disable tips and ads on the lock screen.</value>
+    <value>Questa funzione disabiliterà suggerimenti e annunci nella schermata di blocco.</value>
   </data>
   <data name="_adsPersonalizedAds" xml:space="preserve">
-    <value>Disable Personalized Ads</value>
+    <value>Disattiva gli annunci personalizzati</value>
   </data>
   <data name="_adsPersonalizedAds_desc" xml:space="preserve">
-    <value>This feature will disable personalized ads.</value>
+    <value>Questa funzione disabiliterà gli annunci personalizzati.</value>
   </data>
   <data name="_adsSettingsAds" xml:space="preserve">
-    <value>Disable Settings Ads</value>
+    <value>Disattiva annunci impostazioni</value>
   </data>
   <data name="_adsSettingsAds_desc" xml:space="preserve">
-    <value>This feature will disable ads in settings.</value>
+    <value>Questa funzione disabiliterà gli annunci nelle impostazioni.</value>
   </data>
   <data name="_adsStartmenuAds" xml:space="preserve">
-    <value>Disable Start menu Ads</value>
+    <value>Disattiva gli annunci del menu Start</value>
   </data>
   <data name="_adsStartmenuAds_desc" xml:space="preserve">
-    <value>This feature will disable ads in the start menu.</value>
+    <value>Questa funzione disabiliterà gli annunci nel menu Start.</value>
   </data>
   <data name="_adsTailoredExperiences" xml:space="preserve">
-    <value>Disable Tailored experiences</value>
+    <value>Disabilita Esperienze personalizzate</value>
   </data>
   <data name="_adsTailoredExperiences_desc" xml:space="preserve">
-    <value>Tailored Experiences allows Microsoft to get information from you to deliver personalized tips, ads, and recommendations. Many people would call this telemetry, or even spying.</value>
+    <value>Esperienze personalizzate consente a Microsoft di ottenere informazioni dall'utente per fornire suggerimenti, annunci e consigli personalizzati. \nMolte persone la chiamerebbero telemetria o addirittura spionaggio.</value>
   </data>
   <data name="_adsTipsAndSuggestions" xml:space="preserve">
-    <value>Disable General Tips and Ads</value>
+    <value>Disattiva suggerimenti e annunci generali</value>
   </data>
   <data name="_adsTipsAndSuggestions_desc" xml:space="preserve">
-    <value>This feature will disable general tips and ads.</value>
+    <value>Questa funzione disabiliterà suggerimenti e annunci generali.</value>
   </data>
   <data name="_adsWelcomeExperienceAds" xml:space="preserve">
-    <value>Disable Welcome Experience Ads</value>
+    <value>Disattiva gli annunci sull'esperienza di benvenuto</value>
   </data>
   <data name="_adsWelcomeExperienceAds_desc" xml:space="preserve">
-    <value>This feature will disable ads in the welcome experience.</value>
+    <value>Questa funzione disabiliterà gli annunci nell'esperienza di benvenuto.</value>
   </data>
   <data name="_aiCopilotTaskbar" xml:space="preserve">
-    <value>Don't Show Copilot in Taskbar</value>
+    <value>Non visualizzare Copilot nella barra applicazioni</value>
   </data>
   <data name="_aiCopilotTaskbar_desc" xml:space="preserve">
-    <value>This feature will disable Copilot in Taskbar.</value>
+    <value>Questa funzione disabiliterà Copilot nella barra delle applicazioni.</value>
   </data>
   <data name="_aiRecallMachine" xml:space="preserve">
-    <value>Don't Allow system-wide snapshots</value>
+    <value>Non consentire istantanee a livello di sistema</value>
   </data>
   <data name="_aiRecallMachine_desc" xml:space="preserve">
-    <value>This feature will disable system-wide snapshots.</value>
+    <value>Questa funzione disabiliterà le istantanee a livello di sistema.</value>
   </data>
   <data name="_aiRecallUser" xml:space="preserve">
-    <value>Don't Allow Windows to save snapshots of your screen</value>
+    <value>Non consentire a Windows di salvare istantanee dello schermo</value>
   </data>
   <data name="_aiRecallUser_desc" xml:space="preserve">
-    <value>This feature will disable Recall from saving snapshots of your screen."</value>
+    <value>Questa funzione disabiliterà il richiamo dei salvataggio istantanee dello schermo.</value>
   </data>
   <data name="_gamingGameDVR" xml:space="preserve">
-    <value>Disable Game DVR</value>
+    <value>Disabilita DVR del gioco</value>
   </data>
   <data name="_gamingGameDVR_desc" xml:space="preserve">
-    <value>This feature will disable Game DVR.</value>
+    <value>Questa funzione disabiliterà il DVR del gioco.</value>
   </data>
   <data name="_gamingPowerThrottling" xml:space="preserve">
-    <value>Disable Power Throttling</value>
+    <value>Disabilita la limitazione dell'alimentazione</value>
   </data>
   <data name="_gamingPowerThrottling_desc" xml:space="preserve">
-    <value>This feature will disable Power Throttling.</value>
+    <value>Questa funzione disabiliterà la limitazione dell'alimentazione.</value>
   </data>
   <data name="_gamingVisualFX" xml:space="preserve">
-    <value>Disable Visual Effects</value>
+    <value>Disabilita effetti visivi</value>
   </data>
   <data name="_gamingVisualFX_desc" xml:space="preserve">
-    <value>This feature will disable visual effects in Windows.</value>
+    <value>Questa funzione disabiliterà gli effetti visivi in ​​Windows.</value>
   </data>
   <data name="_privacyActivityHistory" xml:space="preserve">
-    <value>Disable activity history</value>
+    <value>Disattiva la cronologia attività</value>
   </data>
   <data name="_privacyLocationTracking" xml:space="preserve">
-    <value>Disable location tracking</value>
+    <value>Disabilita rilevamento della posizione</value>
   </data>
   <data name="_privacyLocationTracking_desc" xml:space="preserve">
-    <value>Disable location tracking (prevents Windows from accessing your location)</value>
+    <value>Disattiva il rilevamento della posizione (impedisce a Windows di accedere alla tua posizione)</value>
   </data>
   <data name="_privacyPrivacyExperience" xml:space="preserve">
-    <value>Disable Privacy Settings Experience at sign-in</value>
+    <value>Disabilita all'accesso alle impostazioni sull'esperienza e sulla privacy</value>
   </data>
   <data name="_privacyPrivacyExperience_desc" xml:space="preserve">
-    <value>This feature will disable Privacy Settings Experience at sign-in.</value>
+    <value>Questa funzione disabiliterà all'accesso le impostazioni sull'esperienza della privacy.</value>
   </data>
   <data name="_privacyTelemetry" xml:space="preserve">
-    <value>Turn off Telemetry data collection</value>
+    <value>Disattiva la raccolta dei dati di telemetria</value>
   </data>
   <data name="_privacyTelemetry_desc" xml:space="preserve">
-    <value>This feature will turn off telemetry data collection and prevent the data from being sent to Microsoft.</value>
+    <value>Questa funzione disattiverà la raccolta dei dati di telemetria e impedirà l'invio dei dati a Microsoft.</value>
   </data>
   <data name="_uiFullContextMenus" xml:space="preserve">
-    <value>Show Full context menus in Windows 11</value>
+    <value>Visualizza in Windows 11 i menu contestuali completi</value>
   </data>
   <data name="_uiFullContextMenus_desc" xml:space="preserve">
-    <value>This feature will enable full context menus in Windows 11.</value>
+    <value>Questa funzione abiliterà in Windows 11 i menu contestuali completi.</value>
   </data>
   <data name="_uiLockScreen" xml:space="preserve">
-    <value>Don't use personalized lock screen</value>
+    <value>Non usare la schermata di blocco personalizzata</value>
   </data>
   <data name="_uiLockScreen_desc" xml:space="preserve">
-    <value>This feature will disable the personalized lock screen.</value>
+    <value>Questa funzione disabiliterà la schermata di blocco personalizzata.</value>
   </data>
   <data name="_uiSearchboxTaskbarMode" xml:space="preserve">
-    <value>Hide search box on taskbar</value>
+    <value>Nascondi la casella di ricerca nella barra delle applicazioni</value>
   </data>
   <data name="_uiSearchboxTaskbarMode_desc" xml:space="preserve">
-    <value>This feature will hide search box on taskbar</value>
+    <value>Questa funzione nasconderà la casella di ricerca nella barra delle applicazioni</value>
   </data>
   <data name="_uiShowOrHideMostUsedApps" xml:space="preserve">
-    <value>Hide Most used apps in start menu</value>
+    <value>Nascondi nel menu Start le app più usate</value>
   </data>
   <data name="_uiShowOrHideMostUsedApps_desc" xml:space="preserve">
-    <value>This feature will hide Most used apps in start menu</value>
+    <value>Questa funzione nasconderà nel menu Start le app più usate</value>
   </data>
   <data name="_uiShowTaskViewButton" xml:space="preserve">
-    <value>Hide Task view button on taskbar</value>
+    <value>Nascondi nella barra delle applicazioni il pulsante Visualizzazione attività</value>
   </data>
   <data name="_uiShowTaskViewButton_desc" xml:space="preserve">
-    <value>This feature will hide the Task view button on taskbar</value>
+    <value>Questa funzione nasconderà nella barra delle applicazioni il pulsante Visualizzazione attività</value>
   </data>
   <data name="_uiStartLayout" xml:space="preserve">
-    <value>Pin more Apps on start menu</value>
+    <value>Aggiungi altre app al menu Start</value>
   </data>
   <data name="_uiStartLayout_desc" xml:space="preserve">
-    <value>This feature will allow pinning more Apps on start menu</value>
+    <value>Questa funzione consentirà di aggiungere più app al menu Start</value>
   </data>
   <data name="_uiTaskbarAlignment" xml:space="preserve">
-    <value>Align Start button to left</value>
+    <value>Allinea il pulsante Start a sinistra</value>
   </data>
   <data name="_uiTaskbarAlignment_desc" xml:space="preserve">
-    <value>This feature will align the Start button to left</value>
+    <value>Questa funzione allineerà il pulsante Start a sinistra</value>
   </data>
   <data name="formDumputer_ctl_lblDetails" xml:space="preserve">
-    <value>Details about selected app</value>
+    <value>Dettagli sull'app selezionata</value>
   </data>
   <data name="formDumputer_status_Removing" xml:space="preserve">
-    <value>Attempting to remove</value>
+    <value>Tentativo di rimozione</value>
   </data>
   <data name="formDumputer_status_successRemove" xml:space="preserve">
-    <value>Successfully removed</value>
+    <value>Rimozione completata</value>
   </data>
   <data name="formDumputer_status_failedRemove" xml:space="preserve">
-    <value>Error removing</value>
+    <value>Errore durante la rimozione</value>
   </data>
   <data name="formDumputer_status_noItems" xml:space="preserve">
-    <value>No items in the trash yet</value>
+    <value>Nessun elemento ancora nel cestino</value>
   </data>
   <data name="formDumputer_status_Refreshing" xml:space="preserve">
-    <value>Refreshing app list...</value>
+    <value>Aggiornamento elenco app...</value>
   </data>
   <data name="formDumputer_tt_btnRefresh" xml:space="preserve">
-    <value>Refresh</value>
+    <value>Aggiorna</value>
   </data>
   <data name="formDumputer_tt_btnAdd" xml:space="preserve">
-    <value>Add</value>
+    <value>Aggiungi</value>
   </data>
   <data name="formDumputer_ctl_btnUninstall" xml:space="preserve">
-    <value>Remove</value>
+    <value>Rimuovi</value>
   </data>
   <data name="_privacyActivityHistory_desc" xml:space="preserve">
-    <value>Disable activity history (prevents Windows from tracking and storing your activity)</value>
+    <value>Disattiva la cronologia delle attività (impedisce a Windows di monitorare e archiviare le tua attività)</value>
   </data>
   <data name="formPluginsReview_status_Summary" xml:space="preserve">
-    <value>No plugins selected. Please select plugins to apply or revert.</value>
+    <value>Nessun plugin selezionato. Seleziona i plugin da applicare o ripristinare.</value>
   </data>
   <data name="formPluginsReview_status_tobeApplied" xml:space="preserve">
-    <value>To be applied</value>
+    <value>Da applicare</value>
   </data>
   <data name="formPluginsReview_status_tobeReverted" xml:space="preserve">
-    <value>To be Reverted</value>
+    <value>Da ripristinare</value>
   </data>
   <data name="ctl_Donate" xml:space="preserve">
-    <value>Donate</value>
+    <value>Dona</value>
   </data>
   <data name="ctl_DonationPrompts" xml:space="preserve">
-    <value>Enjoying Bloatynosy Nue? If you’d like to support the project, any donation helps keep things going. Thanks a ton!;
-If Bloatynosy Nue made your day easier, consider dropping a small donation to keep the magic alive! Every little bit helps!;
-Like what Bloatynosy Nue does? Throw a small donation my way and help make it even better! Thanks in advance! 😄;
-If you're enjoying Windows 11 thanks to Bloatynosy Nue, a donation would be awesome to keep the project alive. Much appreciated!;
-Loving the results from Bloatynosy Nue? Consider showing some love with a donation. It really helps me keep improving it!;
-If Bloatynosy Nue helped you out, maybe send a small donation to help me keep working on this awesome tool. Every little bit counts!;
-If Bloatynosy Nue made life easier for you, a donation would go a long way in making sure I can keep improving it. Thanks for the support!
+    <value>Ti piace Bloatynosy Nue? Se vuoi sostenere il progetto, qualsiasi donazione aiuta a far andare avanti le cose. Grazie mille!;
+Se Bloatynosy Nue ti ha reso la giornata più semplice, considera di lasciare una piccola donazione per mantenere viva la magia! Ogni piccola cosa aiuta!;
+Ti piace quello che fa Bloatynosy Nue? Lascia una piccola donazione e aiutaci a renderlo ancora migliore! Grazie in anticipo! 😄;
+Se ti piace Windows 11 grazie a Bloatynosy Nue, una donazione sarebbe fantastica per mantenere vivo il progetto. Molto apprezzato!;
+Ti piacciono i risultati di Bloatynosy Nue? Considera l'idea di mostrare un po' d'amore con una donazione. Mi aiuterebbe davvero a continuare a migliorarlo!;
+Se Bloatynosy Nue ti ha aiutato, magari invia una piccola donazione per aiutarmi a continuare a lavorare su questo fantastico strumento. Ogni piccola cosa conta!;
+Se Bloatynosy Nue ti rende la vita più facile, una donazione mi aiuterebbe molto a garantire che io possa continuare a migliorarlo. Grazie per il supporto!
 </value>
   </data>
   <data name="ctl_DonateAsk" xml:space="preserve">
-    <value>Would you like to donate?</value>
+    <value>Vorresti donare?</value>
   </data>
   <data name="formPlugins_ctl_lblInstalled" xml:space="preserve">
-    <value>Installed</value>
+    <value>Installato</value>
   </data>
   <data name="formPlugins_status_notReady" xml:space="preserve">
-    <value>The plugin environment is not ready.\n\nWould you like to enable the store and download the required components?</value>
+    <value>L'ambiente del plugin non è pronto.\n\nVuoi abilitare lo store e scaricare i componenti richiesti?</value>
   </data>
   <data name="formPlugins_status_Ready" xml:space="preserve">
-    <value>Download complete! \nThe Store is ready to use.</value>
+    <value>Download completato! \nLo Store è pronto per l'uso.</value>
   </data>
   <data name="formDumputer_status_countPackages" xml:space="preserve">
-    <value>App packages loaded:</value>
+    <value>Pacchetti app caricati:</value>
   </data>
 </root>

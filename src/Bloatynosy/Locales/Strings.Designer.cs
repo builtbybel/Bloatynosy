@@ -758,7 +758,7 @@ namespace BloatynosyNue.Locales {
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die Accept and apply ähnelt.
+        ///   Sucht eine lokalisierte Zeichenfolge, die Enabled All ähnelt.
         /// </summary>
         internal static string formExperience_ctl_btnApply {
             get {
@@ -767,7 +767,7 @@ namespace BloatynosyNue.Locales {
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die Decline ähnelt.
+        ///   Sucht eine lokalisierte Zeichenfolge, die Disable All ähnelt.
         /// </summary>
         internal static string formExperience_ctl_btnRevert {
             get {
@@ -794,7 +794,7 @@ namespace BloatynosyNue.Locales {
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die Click &quot;Accept and Apply&quot; to proceed, or &quot;Decline&quot; to keep the default settings. Individual adjustments can also be made. ähnelt.
+        ///   Sucht eine lokalisierte Zeichenfolge, die Click &apos;Enable All&apos; to apply all changes, or &apos;Disable All&apos; to revert to the default settings. You can also make individual adjustments as needed. ähnelt.
         /// </summary>
         internal static string formExperience_ctl_lblSubHeader {
             get {
@@ -808,24 +808,6 @@ namespace BloatynosyNue.Locales {
         internal static string formExperience_ctl_textBoxSearch {
             get {
                 return ResourceManager.GetString("formExperience_ctl_textBoxSearch", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die Accepted ähnelt.
-        /// </summary>
-        internal static string formExperience_status_Accepted {
-            get {
-                return ResourceManager.GetString("formExperience_status_Accepted", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die Declined ähnelt.
-        /// </summary>
-        internal static string formExperience_status_Declined {
-            get {
-                return ResourceManager.GetString("formExperience_status_Declined", resourceCulture);
             }
         }
         
