@@ -10,16 +10,16 @@ I had a hard time committing to it, but in the end, I went for it. Now I can pro
 Its primarily designed for Windows 11, but it can also be used on Windows 10, though not all settings are applicable there.
 
 ## Download
-Latest release: https://github.com/builtbybel/Bloatynosy/releases
+Latest release: [Goto releases page ](https://github.com/builtbybel/Bloatynosy/releases)
 
-### Features:
+### Features
 
 - Native stuff (no web app crap)
 - Back to basics: efficient and user-friendly
 - No AI/Copilot integration
 - Focused on the essentials
 
-### What's next:
+### What's next
 - Localizations coming soon for a global reach
   
 And much more to come, stay tuned. Feel free to vote for or suggest new features, including those that were part of the classic Bloatynosy but are still missing
