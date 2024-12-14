@@ -758,7 +758,7 @@ namespace BloatynosyNue.Locales {
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die Enabled All ähnelt.
+        ///   Sucht eine lokalisierte Zeichenfolge, die Enable All ähnelt.
         /// </summary>
         internal static string formExperience_ctl_btnApply {
             get {

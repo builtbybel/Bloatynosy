@@ -154,7 +154,7 @@
     <value>Loading appx packages...</value>
   </data>
   <data name="formExperience_ctl_btnApply" xml:space="preserve">
-    <value>Enabled All</value>
+    <value>Enable All</value>
   </data>
   <data name="formExperience_ctl_btnRevert" xml:space="preserve">
     <value>Disable All</value>
