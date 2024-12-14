@@ -121,7 +121,7 @@
     <value>Indietro</value>
   </data>
   <data name="ctl_btnDumputer" xml:space="preserve">
-    <value>Cassonetto™</value>
+    <value>Pulizia™</value>
   </data>
   <data name="ctl_btnExperience" xml:space="preserve">
     <value>Esperienza</value>
@@ -371,7 +371,7 @@ Bloatynosy Nue</value>
     <value>Questa funzione allineerà il pulsante Start a sinistra</value>
   </data>
   <data name="formDumputer_ctl_lblDetails" xml:space="preserve">
-    <value>Dettagli sull'app selezionata</value>
+    <value>Dettagli app selezionata</value>
   </data>
   <data name="formDumputer_status_Removing" xml:space="preserve">
     <value>Tentativo di rimozione</value>
