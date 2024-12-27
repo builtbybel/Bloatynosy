@@ -1,6 +1,5 @@
-# Bloatynosy Nue
+# Bloaty&Nosy
 
-![nosy](https://github.com/user-attachments/assets/3a0f0806-9c2b-4a9a-a0b3-a5c5cff001c6)
 
 You probably remember my classic BloatynosyApp, which had to go through some renaming and eventually got discontinued. Everything that came after, like the web-based "Winpilot," didn't last long either. Honestly, I thought I was done with Bloatynosy-well, at least with the name. But then, during a recent visit to a well-known company, I saw an employee Googling the app and trying to download it, and I had to stifle a laugh. Apparently, the legend lives on. The employee and I had a good laugh about it, and he even called it the epitome of debloating.
 
