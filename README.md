@@ -1,4 +1,4 @@
-# Bloaty&Nosy
+# The Bloaty and the Nosy - No Bloat, No Problem!
 
 
 You probably remember my classic BloatynosyApp, which had to go through some renaming and eventually got discontinued. Everything that came after, like the web-based "Winpilot," didn't last long either. Honestly, I thought I was done with Bloatynosy-well, at least with the name. But then, during a recent visit to a well-known company, I saw an employee Googling the app and trying to download it, and I had to stifle a laugh. Apparently, the legend lives on. The employee and I had a good laugh about it, and he even called it the epitome of debloating.
