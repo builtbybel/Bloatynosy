@@ -141,35 +141,29 @@
   <data name="formDumputer_ctl_lblHeader" xml:space="preserve">
     <value>Application Dump</value>
   </data>
-  <data name="formDumputer_ctl_lblSort" xml:space="preserve">
-    <value>Sort</value>
-  </data>
   <data name="formDumputer_ctl_lblSubHeader" xml:space="preserve">
     <value>Move apps from the left basket to the right trash can to delete them</value>
   </data>
   <data name="formDumputer_ctl_textBoxSearch" xml:space="preserve">
-    <value>Filter</value>
+    <value>Search apps</value>
   </data>
   <data name="formDumputer_status_Loading" xml:space="preserve">
     <value>Loading appx packages...</value>
   </data>
   <data name="formExperience_ctl_btnApply" xml:space="preserve">
-    <value>Enable All</value>
+    <value>Activate All</value>
   </data>
   <data name="formExperience_ctl_btnRevert" xml:space="preserve">
-    <value>Disable All</value>
+    <value>Deactivate All</value>
   </data>
   <data name="formExperience_ctl_lblHeader" xml:space="preserve">
     <value>Customize Experience</value>
-  </data>
-  <data name="formExperience_ctl_lblSort" xml:space="preserve">
-    <value>Sort</value>
   </data>
   <data name="formExperience_ctl_lblSubHeader" xml:space="preserve">
     <value>Click 'Enable All' to apply all changes, or 'Disable All' to revert to the default settings. You can also make individual adjustments as needed.</value>
   </data>
   <data name="formExperience_ctl_textBoxSearch" xml:space="preserve">
-    <value>Filter</value>
+    <value>Search</value>
   </data>
   <data name="formExperience_statusPermissions" xml:space="preserve">
     <value>Failed to update feature status due to insufficient permissions.</value>
@@ -202,8 +196,8 @@
     <value>More Possibilities with Bloatynosy Nue 
 Plugins</value>
   </data>
-  <data name="tt_btnAboutApp" xml:space="preserve">
-    <value>About this app</value>
+  <data name="tt_btnSettings" xml:space="preserve">
+    <value>Settings</value>
   </data>
   <data name="tt_btnDumputer" xml:space="preserve">
     <value>Remove pre-installed apps on Windows 11 (24H2 and 23H2) to declutter your system</value>
@@ -429,12 +423,24 @@ If Bloatynosy Nue made life easier for you, a donation would go a long way in ma
     <value>Installed</value>
   </data>
   <data name="formPlugins_status_notReady" xml:space="preserve">
-    <value>The plugin environment is not ready.\n\nWould you like to enable the store and download the required components?</value>
+    <value>The required plugin environment is not set up. Do you want to download the necessary components?</value>
   </data>
   <data name="formPlugins_status_Ready" xml:space="preserve">
     <value>Download complete! \nThe Store is ready to use.</value>
   </data>
   <data name="formDumputer_status_countPackages" xml:space="preserve">
     <value>App packages loaded:</value>
+  </data>
+  <data name="formDumputer_ctl_lblMoreInfo" xml:space="preserve">
+    <value>More Infos</value>
+  </data>
+  <data name="formSettings_ctl_lblSecLanguage" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="formSettings_ctl_lblSecAboutApp" xml:space="preserve">
+    <value>About app</value>
+  </data>
+  <data name="ctl_btnStore" xml:space="preserve">
+    <value>Switch to Plugins Store</value>
   </data>
 </root>

@@ -141,14 +141,11 @@
   <data name="formDumputer_ctl_lblHeader" xml:space="preserve">
     <value>App-Debloat</value>
   </data>
-  <data name="formDumputer_ctl_lblSort" xml:space="preserve">
-    <value>Sortieren</value>
-  </data>
   <data name="formDumputer_ctl_lblSubHeader" xml:space="preserve">
     <value>Bewege Apps vom linken Korb in den rechten Mülleimer, um sie zu löschen.</value>
   </data>
   <data name="formDumputer_ctl_textBoxSearch" xml:space="preserve">
-    <value>Filtern</value>
+    <value>Apps durchsuchen</value>
   </data>
   <data name="formDumputer_status_Loading" xml:space="preserve">
     <value>Lade APPX-Pakete...</value>
@@ -162,14 +159,11 @@
   <data name="formExperience_ctl_lblHeader" xml:space="preserve">
     <value>Erlebnis personalisieren</value>
   </data>
-  <data name="formExperience_ctl_lblSort" xml:space="preserve">
-    <value>Sortieren</value>
-  </data>
   <data name="formExperience_ctl_lblSubHeader" xml:space="preserve">
     <value>Klick auf 'Alle aktivieren', um alle Änderungen anzuwenden, oder 'Alle deaktivieren', um Standardwerte zu behalten. Einzelne Einstellungen kannst du separat anpassen.</value>
   </data>
   <data name="formExperience_ctl_textBoxSearch" xml:space="preserve">
-    <value>Filtern</value>
+    <value>Durchsuchen</value>
   </data>
   <data name="formExperience_statusPermissions" xml:space="preserve">
     <value>Fehler bei der Aktualisierung des Funktionsstatus aufgrund fehlender Berechtigungen.</value>
@@ -201,8 +195,8 @@
   <data name="formPlugins_ctl_lblSubHeader" xml:space="preserve">
     <value>Entdecke neue Möglichkeiten mit den Bloatynosy Nue Plugins</value>
   </data>
-  <data name="tt_btnAboutApp" xml:space="preserve">
-    <value>Über diese App</value>
+  <data name="tt_btnSettings" xml:space="preserve">
+    <value>Einstellungen</value>
   </data>
   <data name="tt_btnDumputer" xml:space="preserve">
     <value>Entferne vorinstallierte Apps auf Windows 11 (24H2 und 23H2), um dein System aufzuräumen.</value>
@@ -428,5 +422,17 @@
   </data>
   <data name="formDumputer_status_countPackages" xml:space="preserve">
     <value>App-Pakete geladen:</value>
+  </data>
+  <data name="formDumputer_ctl_lblMoreInfo" xml:space="preserve">
+    <value>Mehr Informationen</value>
+  </data>
+  <data name="formSettings_ctl_lblSecLanguage" xml:space="preserve">
+    <value>Sprache</value>
+  </data>
+  <data name="formSettings_ctl_lblSecAboutApp" xml:space="preserve">
+    <value>Über diese App</value>
+  </data>
+  <data name="ctl_btnStore" xml:space="preserve">
+    <value>Wechsle zum Plugin-Store</value>
   </data>
 </root>
