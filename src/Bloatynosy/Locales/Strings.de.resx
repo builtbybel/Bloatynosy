@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -148,7 +148,7 @@
     <value>Apps durchsuchen</value>
   </data>
   <data name="formDumputer_status_Loading" xml:space="preserve">
-    <value>Lade APPX-Pakete...</value>
+    <value>APPX-Pakete laden...</value>
   </data>
   <data name="formExperience_ctl_btnApply" xml:space="preserve">
     <value>Alle aktivieren</value>
@@ -193,7 +193,7 @@
     <value>Erweiterungen</value>
   </data>
   <data name="formPlugins_ctl_lblSubHeader" xml:space="preserve">
-    <value>Entdecke neue Möglichkeiten mit den Bloatynosy Nue Plugins</value>
+    <value>Entdecke neue Möglichkeiten mit den Bloatynosy Nue-Plugins</value>
   </data>
   <data name="tt_btnSettings" xml:space="preserve">
     <value>Einstellungen</value>
@@ -217,7 +217,7 @@
     <value>Diese Funktion deaktiviert die Werbung im Windows Explorer.</value>
   </data>
   <data name="_adsFinishSetupAds" xml:space="preserve">
-    <value>Werbung die bei Abschluss der Einrichtung erscheint deaktivieren</value>
+    <value>Werbung deaktivieren, die bei Abschluss der Einrichtung erscheint</value>
   </data>
   <data name="_adsFinishSetupAds_desc" xml:space="preserve">
     <value>Diese Funktion deaktiviert die Werbung für das Abschließen der Einrichtung des Gerätes.</value>
@@ -250,7 +250,7 @@
     <value>Maßgeschneidertes Nutzererlebnis deaktivieren</value>
   </data>
   <data name="_adsTailoredExperiences_desc" xml:space="preserve">
-    <value>Für das maßgeschneiderte Nurtzererlebnis ist es Microsoft möglich, Informationen von Ihnen zu erhalten, um personalisierte Tipps, Werbung und Empfehlungen bereitzustellen. Viele Leute würden dies als Telemetrie oder sogar Spionage bezeichnen.</value>
+    <value>Für das maßgeschneiderte Nutzererlebnis ist es Microsoft möglich, Informationen von Ihnen zu erhalten, um personalisierte Tipps, Werbung und Empfehlungen bereitzustellen. Viele Leute würden dies als Telemetrie oder sogar Spionage bezeichnen.</value>
   </data>
   <data name="_adsTipsAndSuggestions" xml:space="preserve">
     <value>Allgemeine Tipps und Werbung deaktivieren</value>
@@ -274,13 +274,13 @@
     <value>Recall nicht erlauben, systemweite Schnappschüsse zu speichern</value>
   </data>
   <data name="_aiRecallMachine_desc" xml:space="preserve">
-    <value>Diese Funktion wird Recall daran hindern systemweit Schnappschüsse zu speichern.</value>
+    <value>Diese Funktion wird Recall daran hindern, systemweit Schnappschüsse zu speichern.</value>
   </data>
   <data name="_aiRecallUser" xml:space="preserve">
-    <value>Recall nicht erlauben, Schnappschüsse Ihres Bildschirms zu speichern</value>
+    <value>Recall nicht erlauben, Schnappschüsse deines Bildschirms zu speichern</value>
   </data>
   <data name="_aiRecallUser_desc" xml:space="preserve">
-    <value>Diese Funktion verhindert, dass Recall Schnappschüsse Ihres Bildschirms speichert.</value>
+    <value>Diese Funktion verhindert, dass Recall Schnappschüsse deines Bildschirms speichert.</value>
   </data>
   <data name="_gamingGameDVR" xml:space="preserve">
     <value>GameDVR deaktivieren</value>
@@ -307,10 +307,10 @@
     <value>Mein Gerät finden deaktivieren</value>
   </data>
   <data name="_privacyLocationTracking_desc" xml:space="preserve">
-    <value>Diese Funktion verhindert, dass Sie Ihr Gerät aus der Ferne orten können.</value>
+    <value>Diese Funktion verhindert, dass du dein Gerät aus der Ferne orten kannst.</value>
   </data>
   <data name="_privacyPrivacyExperience" xml:space="preserve">
-    <value>Datenschutzeinstellugs-Erlebnis beim Anmelden deaktivieren</value>
+    <value>Datenschutzeinstellungs-Erlebnis beim Anmelden deaktivieren</value>
   </data>
   <data name="_privacyPrivacyExperience_desc" xml:space="preserve">
     <value>Diese Funktion deaktiviert das Erlebnis der Datenschutzeinstellungen bei der Anmeldung.</value>
@@ -325,13 +325,13 @@
     <value>Vollständige Kontextmenüs in Windows 11 anzeigen</value>
   </data>
   <data name="_uiFullContextMenus_desc" xml:space="preserve">
-    <value>Diese Funktion gibt Ihnen die Möglichkeit immer ein vollständiges Kontextmenü anzuzeigen. (klassisches Startmenü)</value>
+    <value>Diese Funktion ermöglicht vollständige Kontextmenüs in Windows 11.</value>
   </data>
   <data name="_uiLockScreen" xml:space="preserve">
     <value>Keinen personalisierten Sperrbildschirm verwenden</value>
   </data>
   <data name="_uiLockScreen_desc" xml:space="preserve">
-    <value>Diese Funktion wird den personalisieren Sperrbildschirm deaktivieren.</value>
+    <value>Diese Funktion wird den personalisierten Sperrbildschirm deaktivieren.</value>
   </data>
   <data name="_uiSearchboxTaskbarMode" xml:space="preserve">
     <value>Suche in Taskleiste ausblenden</value>
@@ -406,10 +406,16 @@
     <value>Spenden</value>
   </data>
   <data name="ctl_DonationPrompts" xml:space="preserve">
-    <value>Genießt du Bloatynosy Nue? Wenn du das Projekt unterstützen möchtest, hilft jede Spende, es am Laufen zu halten. Vielen Dank!;Hat dir Bloatynosy Nue den Tag erleichtert? Überlege, eine kleine Spende zu geben, um die Magie am Leben zu halten! Jeder Beitrag hilft!;Gefällt dir, was Bloatynosy Nue macht? Schick eine kleine Spende rüber und hilf dabei, es noch besser zu machen! Vielen Dank im Voraus! 😄;Genießt du Windows 11 dank Bloatynosy Nue? Eine Spende wäre großartig, um das Projekt am Leben zu halten. Vieles wird geschätzt!;Liebst du die Ergebnisse von Bloatynosy Nue? Zeig deine Unterstützung mit einer Spende. Es hilft mir wirklich, es weiter zu verbessern!;Hat dir Bloatynosy Nue geholfen? Vielleicht magst du eine kleine Spende senden, um mir zu helfen, dieses großartige Tool weiterzuentwickeln. Jeder Beitrag zählt!;Wenn Bloatynosy Nue dein Leben erleichtert hat, geht eine Spende wirklich weit, um sicherzustellen, dass ich es weiterhin verbessern kann. Vielen Dank für die Unterstützung!</value>
+    <value>Genießt du Bloatynosy Nue? Wenn du das Projekt unterstützen möchtest, hilft jede Spende, es am Laufen zu halten. Vielen Dank!;
+Hat dir Bloatynosy Nue den Tag erleichtert? Überlege, eine kleine Spende zu geben, um die Magie am Leben zu halten! Jeder Beitrag hilft!;
+Gefällt dir, was Bloatynosy Nue macht? Schick eine kleine Spende rüber und hilf dabei, es noch besser zu machen! Vielen Dank im Voraus! 😄;
+Genießt du Windows 11 dank Bloatynosy Nue? Eine Spende wäre großartig, um das Projekt am Leben zu halten. Vieles wird geschätzt!;
+Liebst du die Ergebnisse von Bloatynosy Nue? Zeig deine Unterstützung mit einer Spende. Es hilft mir wirklich, es weiter zu verbessern!;
+Hat dir Bloatynosy Nue geholfen? Vielleicht magst du eine kleine Spende senden, um mir zu helfen, dieses großartige Tool weiterzuentwickeln. Jeder Beitrag zählt!;
+Wenn Bloatynosy Nue dein Leben erleichtert hat, geht eine Spende wirklich weit, um sicherzustellen, dass ich es weiterhin verbessern kann. Vielen Dank für die Unterstützung!</value>
   </data>
   <data name="ctl_DonateAsk" xml:space="preserve">
-    <value>Möchest du spenden?</value>
+    <value>Möchtest du spenden?</value>
   </data>
   <data name="formPlugins_ctl_lblInstalled" xml:space="preserve">
     <value>Installiert</value>
