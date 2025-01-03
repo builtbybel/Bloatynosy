@@ -1,18 +1,24 @@
 ﻿using System;
 using System.Diagnostics;
+using System.IO;
+using System.Linq;
 using System.Windows.Forms;
 
-namespace BloatynosyNue
+namespace BloatynosyNue.Views
 {
-    public partial class AboutForm : Form
+    public partial class SettingsView : UserControl
     {
-        public AboutForm()
+        private readonly string baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
+
+        public SettingsView()
         {
             InitializeComponent();
             InitializeLocalizedStrings();
 
             string appVersion = Program.GetAppVersion();
-            linkAppVer.Text = "Version:   " + appVersion;
+            linkAppVer.Text = "Version:   " + appVersion + " | X64 | RELEASE";
+
+            PopulateLanguageComboBox();
             ShowRandomMessage();
         }
 
@@ -20,7 +26,36 @@ namespace BloatynosyNue
         {
             // Set localized strings for UI elements
 
-            linkDonate.Text = BloatynosyNue.Locales.Strings.ctl_Donate;
+            lblHeader.Text = Locales.Strings.tt_btnSettings;
+            linkDonate.Text = Locales.Strings.ctl_Donate;
+        }
+
+        private void PopulateLanguageComboBox()
+        {
+            // Search for folders with names consisting of 2-3 characters
+            var languageFolders = Directory.GetDirectories(baseDirectory)
+                .Select(Path.GetFileName) // Get only folder names
+                .Where(name => name.Length >= 2 && name.Length <= 3) // Filter names with 2-3 characters
+                .OrderBy(name => name) // Sort alphabetically
+                .ToList();
+
+            // If no language folders are found, add "English" as the default
+            if (languageFolders.Count == 0)
+            {
+                comboBoxLanguages.Items.Add("English");
+                comboBoxLanguages.SelectedItem = "English";
+            }
+            else
+            {
+                // Add detected language folders to the ComboBox
+                foreach (string folder in languageFolders)
+                {
+                    comboBoxLanguages.Items.Add(folder);
+                }
+
+                // Select 'en' (English) if available; otherwise, select the first language
+                comboBoxLanguages.SelectedItem = languageFolders.Contains("en") ? "en" : languageFolders.First();
+            }
         }
 
         public void ShowRandomDonationPrompt()
@@ -43,7 +78,6 @@ namespace BloatynosyNue
                 });
             }
         }
-
 
         public void ShowRandomMessage()
         {
@@ -73,11 +107,6 @@ namespace BloatynosyNue
             linkRandom.Text = randomMessage;
         }
 
-        private void btnOK_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void linkDonate_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             ShowRandomDonationPrompt();
@@ -88,9 +117,14 @@ namespace BloatynosyNue
             Process.Start("https://github.com/builtbybel/Bloatynosy");
         }
 
-        private void btnLanguage_Click(object sender, EventArgs e)
+        private void linkLang_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Process.Start("https://github.com/builtbybel/Bloatynosy/tree/main/languages/");
+        }
+
+        private void linkCreditsIcon_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("https://www.flaticon.com/free-icon/curious_725039");
         }
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Drawing;
 using System.IO;
+using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using Views;
@@ -16,6 +17,7 @@ namespace BloatynosyNue.Views
         private Logger logger;
         private PluginsView pluginsView;
         private Panel parentPanel;
+        private readonly TabControl tabControl;  // Store the TabControl
 
         public PluginsReview(PluginsView pluginsView, Panel parentPanel, Dictionary<TreeNode, bool> pendingChanges, Logger logger, PSPluginHandler psPlugins)
         {
@@ -34,7 +36,7 @@ namespace BloatynosyNue.Views
         private void InitializeLocalizedStrings()
         {
             // Set localized strings for UI elements
-            lblHeader.Text = BloatynosyNue.Locales.Strings.formPlugins_ctl_lblHeader;
+            lblHeader.Text = BloatynosyNue.Locales.Strings.formPluginsReview_ctl_lblHeader;
             btnViewSc.Text = BloatynosyNue.Locales.Strings.formPluginsReview_ctl_btnViewSc;
             btnRun.Text = BloatynosyNue.Locales.Strings.formPluginsReview_ctl_btnRun;
 
@@ -86,7 +88,12 @@ namespace BloatynosyNue.Views
         private async void btnRun_Click(object sender, EventArgs e)
         {
             btnRun.Enabled = false;
-            Logger.OpenLoggerForm();
+            // Switch to the Logger tab
+            MainForm mainForm = Application.OpenForms.OfType<MainForm>().FirstOrDefault();
+            if (mainForm != null)
+            {
+                mainForm.OpenLoggerView();
+            }
 
             foreach (var entry in pendingChanges)
             {
@@ -134,9 +141,10 @@ namespace BloatynosyNue.Views
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            // Use SwitchView to go back to PluginsView
-            SwitchView.BackToPluginsView(pluginsView, parentPanel);
+          //  var pluginsView = new PluginsView(this.Parent as Panel); // Create the PluginsView again
+            SwitchView.SetView(pluginsView, this.Parent as Panel); // Display the PluginsView in the same tab
         }
+
 
         private void btnViewSc_Click(object sender, EventArgs e)
         {

@@ -141,6 +141,9 @@
   <data name="formDumputer_ctl_lblHeader" xml:space="preserve">
     <value>Dump applicazione</value>
   </data>
+  <data name="formDumputer_ctl_lblSort" xml:space="preserve">
+    <value>Ordina</value>
+  </data>
   <data name="formDumputer_ctl_lblSubHeader" xml:space="preserve">
     <value>Sposta le app dal cestino di sinistra al cestino di destra per eliminarle</value>
   </data>
@@ -158,6 +161,9 @@
   </data>
   <data name="formExperience_ctl_lblHeader" xml:space="preserve">
     <value>Personalizza esperienza</value>
+  </data>
+  <data name="formExperience_ctl_lblSort" xml:space="preserve">
+    <value>Ordina</value>
   </data>
   <data name="formExperience_ctl_lblSubHeader" xml:space="preserve">
     <value>Per procedere seleziona "Accetta e applica" o "Rifiuta" per mantenere le impostazioni predefinite. È inoltre possibile apportare modifiche individuali.</value>

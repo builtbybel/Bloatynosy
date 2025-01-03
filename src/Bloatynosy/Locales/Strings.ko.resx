@@ -141,6 +141,9 @@
   <data name="formDumputer_ctl_lblHeader" xml:space="preserve">
     <value>응용 프로그램 덤프</value>
   </data>
+  <data name="formDumputer_ctl_lblSort" xml:space="preserve">
+    <value>정렬</value>
+  </data>
   <data name="formDumputer_ctl_lblSubHeader" xml:space="preserve">
     <value>앱을 왼쪽 바구니에서 오른쪽 쓰레기통으로 이동하여 삭제합니다</value>
   </data>
@@ -158,6 +161,9 @@
   </data>
   <data name="formExperience_ctl_lblHeader" xml:space="preserve">
     <value>사용자 지정 경험</value>
+  </data>
+  <data name="formExperience_ctl_lblSort" xml:space="preserve">
+    <value>정렬</value>
   </data>
   <data name="formExperience_ctl_lblSubHeader" xml:space="preserve">
     <value>모든 변경 사항을 적용하려면 '모두 활성화'를 클릭하고, 기본 설정으로 되돌리려면 '모두 비활성화'를 클릭합니다. 필요에 따라 개별적으로 조정할 수도 있습니다.</value>

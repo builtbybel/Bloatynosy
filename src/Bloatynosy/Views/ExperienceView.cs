@@ -25,8 +25,6 @@ namespace Views
             InitializeFeatures();
             InitializeCategory();
             LoadFeatures();
-
-            lblWarnAsset.Text = "\u26A0"; // Set the warning icon
         }
 
         private void InitializeLogger()
@@ -44,7 +42,6 @@ namespace Views
             lblSort.Text = BloatynosyNue.Locales.Strings.formExperience_ctl_lblSort;
             btnApply.Text = BloatynosyNue.Locales.Strings.formExperience_ctl_btnApply;
             btnRevert.Text = BloatynosyNue.Locales.Strings.formExperience_ctl_btnRevert;
-            btnBack.Text = BloatynosyNue.Locales.Strings.ctl_btnBack;
         }
 
         private void InitializeFeatures()
@@ -184,11 +181,6 @@ namespace Views
 
             LoadFeatures(selectedCategory); // Reload only the filtered features
             MessageBox.Show($"Features in category '{selectedCategory}' have been reverted.", "Revert Complete", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        }
-
-        private void btnBack_Click(object sender, EventArgs e)
-        {
-            SwitchView.GoBack(this.Parent as Panel);
         }
 
         private void searchTextBox_TextChanged(object sender, EventArgs e)

@@ -556,15 +556,6 @@ namespace BloatynosyNue.Locales {
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die Switch to Plugins Store ähnelt.
-        /// </summary>
-        internal static string ctl_btnStore {
-            get {
-                return ResourceManager.GetString("ctl_btnStore", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Donate ähnelt.
         /// </summary>
         internal static string ctl_Donate {
@@ -650,11 +641,11 @@ namespace BloatynosyNue.Locales {
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die More Infos ähnelt.
+        ///   Sucht eine lokalisierte Zeichenfolge, die Sort ähnelt.
         /// </summary>
-        internal static string formDumputer_ctl_lblMoreInfo {
+        internal static string formDumputer_ctl_lblSort {
             get {
-                return ResourceManager.GetString("formDumputer_ctl_lblMoreInfo", resourceCulture);
+                return ResourceManager.GetString("formDumputer_ctl_lblSort", resourceCulture);
             }
         }
         
@@ -668,7 +659,7 @@ namespace BloatynosyNue.Locales {
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die Search apps ähnelt.
+        ///   Sucht eine lokalisierte Zeichenfolge, die Filter ähnelt.
         /// </summary>
         internal static string formDumputer_ctl_textBoxSearch {
             get {
@@ -767,7 +758,7 @@ namespace BloatynosyNue.Locales {
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die Activate All ähnelt.
+        ///   Sucht eine lokalisierte Zeichenfolge, die Enable All ähnelt.
         /// </summary>
         internal static string formExperience_ctl_btnApply {
             get {
@@ -776,7 +767,7 @@ namespace BloatynosyNue.Locales {
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die Deactivate All ähnelt.
+        ///   Sucht eine lokalisierte Zeichenfolge, die Disable All ähnelt.
         /// </summary>
         internal static string formExperience_ctl_btnRevert {
             get {
@@ -794,6 +785,15 @@ namespace BloatynosyNue.Locales {
         }
         
         /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Sort ähnelt.
+        /// </summary>
+        internal static string formExperience_ctl_lblSort {
+            get {
+                return ResourceManager.GetString("formExperience_ctl_lblSort", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Click &apos;Enable All&apos; to apply all changes, or &apos;Disable All&apos; to revert to the default settings. You can also make individual adjustments as needed. ähnelt.
         /// </summary>
         internal static string formExperience_ctl_lblSubHeader {
@@ -803,7 +803,7 @@ namespace BloatynosyNue.Locales {
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die Search ähnelt.
+        ///   Sucht eine lokalisierte Zeichenfolge, die Filter ähnelt.
         /// </summary>
         internal static string formExperience_ctl_textBoxSearch {
             get {
@@ -953,24 +953,6 @@ namespace BloatynosyNue.Locales {
         internal static string formPluginsReview_status_tobeReverted {
             get {
                 return ResourceManager.GetString("formPluginsReview_status_tobeReverted", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die About app ähnelt.
-        /// </summary>
-        internal static string formSettings_ctl_lblSecAboutApp {
-            get {
-                return ResourceManager.GetString("formSettings_ctl_lblSecAboutApp", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die Language ähnelt.
-        /// </summary>
-        internal static string formSettings_ctl_lblSecLanguage {
-            get {
-                return ResourceManager.GetString("formSettings_ctl_lblSecLanguage", resourceCulture);
             }
         }
         

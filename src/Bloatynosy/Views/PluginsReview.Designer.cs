@@ -34,22 +34,21 @@
             this.textSummary = new System.Windows.Forms.TextBox();
             this.lblHeader = new System.Windows.Forms.Label();
             this.btnViewSc = new System.Windows.Forms.Button();
-            this.panelForm = new System.Windows.Forms.Panel();
-            this.panelForm.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnBack
             // 
-            this.btnBack.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnBack.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
             this.btnBack.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
             this.btnBack.FlatAppearance.BorderSize = 0;
             this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBack.Font = new System.Drawing.Font("Segoe UI Variable Text", 10F);
-            this.btnBack.ForeColor = System.Drawing.Color.Black;
-            this.btnBack.Location = new System.Drawing.Point(38, 562);
+            this.btnBack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(0)))), ((int)(((byte)(123)))));
+            this.btnBack.Location = new System.Drawing.Point(447, 553);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(4);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(99, 27);
+            this.btnBack.Size = new System.Drawing.Size(115, 31);
             this.btnBack.TabIndex = 248;
             this.btnBack.TabStop = false;
             this.btnBack.Text = "Back";
@@ -60,18 +59,20 @@
             // 
             this.btnRun.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnRun.AutoEllipsis = true;
-            this.btnRun.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.btnRun.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(0)))), ((int)(((byte)(123)))));
             this.btnRun.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRun.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnRun.FlatAppearance.BorderSize = 2;
             this.btnRun.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(192)))));
             this.btnRun.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRun.Font = new System.Drawing.Font("Segoe UI Variable Text", 9.75F);
+            this.btnRun.ForeColor = System.Drawing.Color.White;
             this.btnRun.Image = ((System.Drawing.Image)(resources.GetObject("btnRun.Image")));
             this.btnRun.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRun.Location = new System.Drawing.Point(541, 554);
+            this.btnRun.Location = new System.Drawing.Point(570, 553);
+            this.btnRun.Margin = new System.Windows.Forms.Padding(4);
             this.btnRun.Name = "btnRun";
-            this.btnRun.Size = new System.Drawing.Size(139, 27);
+            this.btnRun.Size = new System.Drawing.Size(115, 31);
             this.btnRun.TabIndex = 249;
             this.btnRun.Text = "Run";
             this.btnRun.UseVisualStyleBackColor = false;
@@ -84,12 +85,13 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textSummary.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
             this.textSummary.Font = new System.Drawing.Font("Segoe UI Variable Small Semilig", 9.75F);
-            this.textSummary.Location = new System.Drawing.Point(30, 90);
+            this.textSummary.Location = new System.Drawing.Point(25, 73);
+            this.textSummary.Margin = new System.Windows.Forms.Padding(4);
             this.textSummary.Multiline = true;
             this.textSummary.Name = "textSummary";
             this.textSummary.ReadOnly = true;
             this.textSummary.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textSummary.Size = new System.Drawing.Size(668, 389);
+            this.textSummary.Size = new System.Drawing.Size(660, 368);
             this.textSummary.TabIndex = 252;
             // 
             // lblHeader
@@ -97,9 +99,10 @@
             this.lblHeader.AutoEllipsis = true;
             this.lblHeader.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
             this.lblHeader.ForeColor = System.Drawing.Color.Black;
-            this.lblHeader.Location = new System.Drawing.Point(21, 19);
+            this.lblHeader.Location = new System.Drawing.Point(24, 23);
+            this.lblHeader.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblHeader.Name = "lblHeader";
-            this.lblHeader.Size = new System.Drawing.Size(226, 33);
+            this.lblHeader.Size = new System.Drawing.Size(321, 29);
             this.lblHeader.TabIndex = 253;
             this.lblHeader.Text = "Review your selections";
             // 
@@ -111,39 +114,32 @@
             this.btnViewSc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnViewSc.Font = new System.Drawing.Font("Segoe UI Variable Text", 8F);
             this.btnViewSc.ForeColor = System.Drawing.Color.Black;
-            this.btnViewSc.Location = new System.Drawing.Point(581, 497);
+            this.btnViewSc.Location = new System.Drawing.Point(570, 464);
+            this.btnViewSc.Margin = new System.Windows.Forms.Padding(4);
             this.btnViewSc.Name = "btnViewSc";
-            this.btnViewSc.Size = new System.Drawing.Size(99, 24);
+            this.btnViewSc.Size = new System.Drawing.Size(115, 27);
             this.btnViewSc.TabIndex = 254;
             this.btnViewSc.TabStop = false;
             this.btnViewSc.Text = "View script";
             this.btnViewSc.UseVisualStyleBackColor = false;
             this.btnViewSc.Click += new System.EventHandler(this.btnViewSc_Click);
             // 
-            // panelForm
-            // 
-            this.panelForm.Controls.Add(this.lblHeader);
-            this.panelForm.Controls.Add(this.btnBack);
-            this.panelForm.Controls.Add(this.btnViewSc);
-            this.panelForm.Controls.Add(this.btnRun);
-            this.panelForm.Controls.Add(this.textSummary);
-            this.panelForm.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelForm.Location = new System.Drawing.Point(0, 0);
-            this.panelForm.Name = "panelForm";
-            this.panelForm.Size = new System.Drawing.Size(711, 600);
-            this.panelForm.TabIndex = 255;
-            // 
             // PluginsReview
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.Controls.Add(this.panelForm);
+            this.Controls.Add(this.lblHeader);
+            this.Controls.Add(this.btnBack);
+            this.Controls.Add(this.btnViewSc);
+            this.Controls.Add(this.textSummary);
+            this.Controls.Add(this.btnRun);
+            this.Font = new System.Drawing.Font("Segoe UI Variable Small Semilig", 9.75F);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "PluginsReview";
             this.Size = new System.Drawing.Size(711, 600);
-            this.panelForm.ResumeLayout(false);
-            this.panelForm.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -153,6 +149,5 @@
         private System.Windows.Forms.TextBox textSummary;
         private System.Windows.Forms.Label lblHeader;
         private System.Windows.Forms.Button btnViewSc;
-        private System.Windows.Forms.Panel panelForm;
     }
 }

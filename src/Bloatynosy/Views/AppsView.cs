@@ -37,6 +37,7 @@ namespace BloatynosyNue.Views
             btnAdd.Text = "\uE710";
             btnRemove.Text = "\uE738";
             btnRefresh.Text = "\ue72c";
+            btnCollapse.Text = "\uEA5B";
         }
 
         private void MainControl_Load(object sender, EventArgs e)
@@ -56,7 +57,7 @@ namespace BloatynosyNue.Views
             // Set localized strings for UI elements
             lblHeader.Text = Locales.Strings.formDumputer_ctl_lblHeader;
             lblSubHeader.Text = Locales.Strings.formDumputer_ctl_lblSubHeader;
-            lblDetails.Text = Locales.Strings.formDumputer_ctl_lblDetails;
+            textDetails.Text = Locales.Strings.formDumputer_ctl_lblDetails;
             textBoxSearch.Text = Locales.Strings.formDumputer_ctl_textBoxSearch;
             lblSort.Text = Locales.Strings.formDumputer_ctl_lblSort;
             btnUninstall.Text = Locales.Strings.formDumputer_ctl_btnUninstall;
@@ -65,7 +66,6 @@ namespace BloatynosyNue.Views
             toolTip.SetToolTip(btnRemove, Locales.Strings.formDumputer_tt_btnRemove);
             toolTip.SetToolTip(btnRefresh, Locales.Strings.formDumputer_tt_btnRefresh);
 
-            btnBack.Text = Locales.Strings.ctl_btnBack;
         }
 
         // Load all installed Appx packages
@@ -505,9 +505,18 @@ namespace BloatynosyNue.Views
             RefreshAppList();
         }
 
-        private void btnBack_Click(object sender, EventArgs e)
+        private void btnCollapse_Click(object sender, EventArgs e)
         {
-            SwitchView.GoBack(this.Parent as Panel);
+            if (splitContainer.Panel2Collapsed)
+            {
+                // Panel2 einblenden
+                splitContainer.Panel2Collapsed = false;
+            }
+            else
+            {
+                // Panel2 ausblenden
+                splitContainer.Panel2Collapsed = true;
+            }
         }
     }
 }

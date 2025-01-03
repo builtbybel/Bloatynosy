@@ -1,62 +1,47 @@
-﻿using System;
+﻿using BloatynosyNue.Views;
 using System.Collections.Generic;
 using System.Drawing;
-using System.Windows.Forms;
+using System;
 
-namespace BloatynosyNue
+public class Logger
 {
-    public class Logger
+    private static LoggerView loggerViewInstance;
+    private static readonly List<(string Message, Color Color)> logBuffer = new List<(string, Color)>();
+
+    // Set the LoggerView instance dynamically
+    public static void SetLoggerView(LoggerView loggerView)
     {
-        private readonly RichTextBox defaultRtbLog;
-        private static LoggerForm loggerFormInstance;
-        private static readonly List<(string Message, Color Color)> logBuffer = new List<(string, Color)>();
-
-        // Constructor with optional RichTextBox
-        public Logger(RichTextBox rtbLog = null) => defaultRtbLog = rtbLog;
-
-        // Open the LoggerForm and load buffered logs
-        public static void OpenLoggerForm()
+        if (loggerView == null)
         {
-            if (loggerFormInstance == null || loggerFormInstance.IsDisposed)
-            {
-                loggerFormInstance = new LoggerForm();
-                loggerFormInstance.Show();
-
-                // Load buffered logs
-                logBuffer.ForEach(log => loggerFormInstance.AddLog(log.Message, log.Color));
-              //  logBuffer.Clear(); // Clear buffer after displaying
-            }
-            else
-            {
-                loggerFormInstance.BringToFront();
-            }
+            throw new ArgumentNullException(nameof(loggerView), "LoggerView cannot be null.");
         }
 
-        // Log a message with color and timestamp
-        public void Log(string message, Color color)
+        loggerViewInstance = loggerView;
+
+        // If there were logs buffered before the view was set, flush them now
+        foreach (var log in logBuffer)
         {
-            string timestampedMessage = $"{DateTime.Now:HH:mm:ss} - {message}";
+            loggerViewInstance.AddLog(log.Message, log.Color);
+        }
 
-            // Log to the default RichTextBox if it's available and the handle is created
-            if (defaultRtbLog != null && defaultRtbLog.IsHandleCreated)
-            {
-                defaultRtbLog.BeginInvoke(new Action(() =>
-                {
-                    defaultRtbLog.SelectionColor = color;
-                    defaultRtbLog.AppendText(timestampedMessage + Environment.NewLine);
-                    defaultRtbLog.ScrollToCaret();
-                }));
-            }
+        // Clear the buffer after flushing
+        logBuffer.Clear();
+    }
 
-            // Buffer the log for future display in LoggerForm
+    // Log a message with color and timestamp
+    public void Log(string message, Color color)
+    {
+        string timestampedMessage = $"{DateTime.Now:HH:mm:ss} - {message}";
+
+        // Log to the LoggerView if it's open
+        if (loggerViewInstance != null)
+        {
+            loggerViewInstance.AddLog(timestampedMessage, color);
+        }
+        else
+        {
+            // If LoggerView isn't open, buffer the log for future display
             logBuffer.Add((timestampedMessage, color));
-
-            // Log to LoggerForm if it's open and the handle is created
-            if (loggerFormInstance != null && loggerFormInstance.IsHandleCreated && !loggerFormInstance.IsDisposed)
-            {
-                loggerFormInstance.BeginInvoke(new Action(() => loggerFormInstance.AddLog(timestampedMessage, color)));
-            }
         }
-
     }
 }

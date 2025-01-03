@@ -7,7 +7,7 @@
     <ProjectGuid>{73427BEC-FD4F-41FB-A985-66F0F36338C2}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>BloatynosyNue</RootNamespace>
-    <AssemblyName>Bloatynosy Nue</AssemblyName>
+    <AssemblyName>Bloatynosy</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -57,12 +57,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AboutForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AboutForm.Designer.cs">
-      <DependentUpon>AboutForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="Experience\AI\CopilotTaskbar.cs" />
     <Compile Include="Experience\AI\RecallMachine.cs" />
     <Compile Include="Experience\AI\RecallUser.cs" />
@@ -94,6 +88,7 @@
     <Compile Include="Experience\UI\ShowTaskViewButton.cs" />
     <Compile Include="Experience\UI\StartLayout.cs" />
     <Compile Include="Experience\UI\TaskbarAlignment.cs" />
+    <Compile Include="Helper\Helper.cs" />
     <Compile Include="Helper\Logger.cs" />
     <Compile Include="Helper\Utils.cs" />
     <Compile Include="Helper\Views.cs" />
@@ -112,12 +107,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Strings.it.resx</DependentUpon>
     </Compile>
-    <Compile Include="LoggerForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="LoggerForm.Designer.cs">
-      <DependentUpon>LoggerForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,11 +122,11 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="PSPluginHandler.cs" />
-    <Compile Include="StoreForm.cs">
-      <SubType>Form</SubType>
+    <Compile Include="Views\SettingsView.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="StoreForm.Designer.cs">
-      <DependentUpon>StoreForm.cs</DependentUpon>
+    <Compile Include="Views\SettingsView.Designer.cs">
+      <DependentUpon>SettingsView.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\ExperienceView.cs">
       <SubType>UserControl</SubType>
@@ -151,6 +140,12 @@
     <Compile Include="Views\AppsView.Designer.cs">
       <DependentUpon>AppsView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\LoggerView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\LoggerView.Designer.cs">
+      <DependentUpon>LoggerView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\PluginsView.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -163,9 +158,12 @@
     <Compile Include="Views\PluginsReview.Designer.cs">
       <DependentUpon>PluginsReview.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AboutForm.resx">
-      <DependentUpon>AboutForm.cs</DependentUpon>
-    </EmbeddedResource>
+    <Compile Include="Views\StoreView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\StoreView.Designer.cs">
+      <DependentUpon>StoreView.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Locales\Strings.de.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Strings.de.Designer.cs</LastGenOutput>
@@ -174,12 +172,10 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Strings.it.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Locales\Strings.ko.resx" />
     <EmbeddedResource Include="Locales\Strings.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Strings.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="LoggerForm.resx">
-      <DependentUpon>LoggerForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -189,8 +185,8 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="StoreForm.resx">
-      <DependentUpon>StoreForm.cs</DependentUpon>
+    <EmbeddedResource Include="Views\SettingsView.resx">
+      <DependentUpon>SettingsView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\AppsView.resx">
       <DependentUpon>AppsView.cs</DependentUpon>
@@ -198,11 +194,17 @@
     <EmbeddedResource Include="Views\ExperienceView.resx">
       <DependentUpon>ExperienceView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\LoggerView.resx">
+      <DependentUpon>LoggerView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\PluginsView.resx">
       <DependentUpon>PluginsView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\PluginsReview.resx">
       <DependentUpon>PluginsReview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\StoreView.resx">
+      <DependentUpon>StoreView.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.manifest" />
     <None Include="packages.config" />
@@ -221,6 +223,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AppIcon.ico" />
+    <None Include="Resources\assetWaving.png" />
     <None Include="Resources\assetUAC.png" />
     <None Include="Resources\assetHeader.png" />
   </ItemGroup>

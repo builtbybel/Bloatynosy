@@ -1,21 +1,17 @@
-﻿using BloatynosyNue.Views;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
-using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Net.Http;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace BloatynosyNue
+namespace BloatynosyNue.Views
 {
-    public partial class StoreForm : Form
+    public partial class StoreView : UserControl
     {
         private const string PluginJsonUrl = "https://raw.githubusercontent.com/builtbybel/Bloatynosy/main/plugins/plugins_manifest.json";
         private const string PluginBaseUrl = "https://github.com/builtbybel/Bloatynosy/raw/main/plugins/";
@@ -24,14 +20,12 @@ namespace BloatynosyNue
         private Dictionary<string, string> pluginDescriptions;
 
         private readonly string pluginsDirectory = Path.Combine(Application.StartupPath, "plugins");
+        private PluginsView pluginsView;
 
-        private PluginsView _pluginsView;
-
-        public StoreForm(PluginsView pluginsView)
+        public StoreView(PluginsView pluginsView)
         {
+            this.pluginsView = pluginsView;
             InitializeComponent();
-            _pluginsView = pluginsView;
-
             LoadPlugins();
         }
 
@@ -66,7 +60,46 @@ namespace BloatynosyNue
             }
         }
 
-        private async void btnDownload_Click(object sender, EventArgs e)
+        private async Task DownloadPluginsAsync(List<string> plugins)
+        {
+            progressBar.Value = 0;
+            progressBar.Maximum = plugins.Count;
+            progressBar.Visible = true;
+
+            using (HttpClient client = new HttpClient())
+            {
+                foreach (var pluginFileName in plugins)
+                {
+                    try
+                    {
+                        var pluginUrl = $"{PluginBaseUrl}{pluginFileName}";
+                        var downloadPath = Path.Combine(pluginsDirectory, pluginFileName);
+
+                        var data = await client.GetByteArrayAsync(pluginUrl);
+                        await WriteAllBytesAsync(downloadPath, data);
+
+                        progressBar.Value += 1;
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show($"Failed to download {pluginFileName}: {ex.Message}");
+                    }
+                }
+            }
+
+            MessageBox.Show("All selected plugins have been downloaded.");
+            progressBar.Visible = false;
+        }
+
+        private async Task WriteAllBytesAsync(string path, byte[] data)
+        {
+            using (var fs = new FileStream(path, FileMode.Create, FileAccess.Write, FileShare.None, 4096, useAsync: true))
+            {
+                await fs.WriteAsync(data, 0, data.Length);
+            }
+        }
+
+        private async void btnInstall_Click(object sender, EventArgs e)
         {
             var selectedPlugins = new List<string>();
             foreach (var plugin in checkedListBoxPlugins.CheckedItems)
@@ -82,6 +115,9 @@ namespace BloatynosyNue
             {
                 MessageBox.Show("Please select at least one plugin to download.");
             }
+
+            // Refresh the list of plugins in the PluginsView
+            pluginsView.RefreshPlugins();
         }
 
         private void btnUninstall_Click(object sender, EventArgs e)
@@ -110,17 +146,13 @@ namespace BloatynosyNue
             }
 
             MessageBox.Show("Selected plugins have been uninstalled.");
-            checkedListBoxPlugins.Items.Clear();
-            LoadPlugins(); // Refresh the list of plugins
-        }
 
-        private void checkedListBoxPlugins_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            var selectedPlugin = checkedListBoxPlugins.SelectedItem?.ToString();
-            if (selectedPlugin != null && pluginDescriptions.ContainsKey(selectedPlugin))
-            {
-                textDescription.Text = pluginDescriptions[selectedPlugin];
-            }
+            // Refresh the list of plugins
+            checkedListBoxPlugins.Items.Clear();
+            LoadPlugins();
+
+            // Refresh the list of plugins in the PluginsView
+            pluginsView.RefreshPlugins();
         }
 
         private void btnImport_Click(object sender, EventArgs e)
@@ -165,65 +197,15 @@ namespace BloatynosyNue
             }
         }
 
-        private async Task DownloadPluginsAsync(List<string> plugins)
+        private void checkedListBoxPlugins_SelectedIndexChanged(object sender, EventArgs e)
         {
-            progressBar.Value = 0;
-            progressBar.Maximum = plugins.Count;
-
-            using (HttpClient client = new HttpClient())
+            var selectedPlugin = checkedListBoxPlugins.SelectedItem?.ToString();
+            if (selectedPlugin != null && pluginDescriptions.ContainsKey(selectedPlugin))
             {
-                foreach (var pluginFileName in plugins)
-                {
-                    try
-                    {
-                        var pluginUrl = $"{PluginBaseUrl}{pluginFileName}";
-                        var downloadPath = Path.Combine(pluginsDirectory, pluginFileName);
-
-                        var data = await client.GetByteArrayAsync(pluginUrl);
-                        await WriteAllBytesAsync(downloadPath, data);
-
-                        progressBar.Value += 1;
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show($"Failed to download {pluginFileName}: {ex.Message}");
-                    }
-                }
-            }
-
-            MessageBox.Show("All selected plugins have been downloaded.");
-        }
-
-        private async Task WriteAllBytesAsync(string path, byte[] data)
-        {
-            using (var fs = new FileStream(path, FileMode.Create, FileAccess.Write, FileShare.None, 4096, useAsync: true))
-            {
-                await fs.WriteAsync(data, 0, data.Length);
+                lblDescription.Text = pluginDescriptions[selectedPlugin];
             }
         }
 
-        protected override void OnFormClosing(FormClosingEventArgs e)
-        {
-            base.OnFormClosing(e);
-            _pluginsView.RefreshPlugins();
-        }
-
-        private void linkPluginsDirectory_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            try
-            {
-                Process.Start("explorer.exe", pluginsDirectory);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Failed to open plugins directory: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-        private void btnBack_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            _pluginsView.RefreshPlugins();
-        }
+ 
     }
 }

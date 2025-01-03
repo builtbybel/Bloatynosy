@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BloatynosyNue.Helpers;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Drawing;
@@ -13,18 +14,18 @@ namespace BloatynosyNue.Views
     {
         private Logger logger;
         private PSPluginHandler PSPlugins;
-        private PluginsReview pluginsView;
-        private Panel parentPanel;
-
         private Dictionary<TreeNode, bool> pendingChanges = new Dictionary<TreeNode, bool>();
         private static readonly HttpClient httpClient = new HttpClient();
+        private readonly string pluginsDirectory = Path.Combine(Application.StartupPath, "plugins");
 
-        public PluginsView(Panel parentPanel)
+        public PluginsView()
         {
             InitializeComponent();
             InitializeLogger();
             InitializeLocalizedStrings();
-            this.parentPanel = parentPanel;
+
+            btnPluginsDir.Text = "\uED25"; // Folder icon
+            btnRefresh.Text = "\uE72C"; // Refresh icon
         }
 
         private void PluginsView_Load(object sender, EventArgs e)
@@ -46,26 +47,11 @@ namespace BloatynosyNue.Views
             btnNext.Text = BloatynosyNue.Locales.Strings.formPlugins_ctl_btnNext;
             lblInstalled.Text = BloatynosyNue.Locales.Strings.formPlugins_ctl_lblInstalled;
             btnDonate.Text = BloatynosyNue.Locales.Strings.ctl_Donate;
-
-            btnBack.Text = BloatynosyNue.Locales.Strings.ctl_btnBack;
         }
-
-        // Refresh the tree view
-        public void RefreshPlugins()
-        {
-            treePlugins.Nodes.Clear();
-
-            // Reload
-            LoadPlugins();
-        }
-
-        private bool IsPluginEnvironmentReady() =>
-         Directory.Exists(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "plugins")) &&
-         File.Exists(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Newtonsoft.Json.dll"));
 
         public async void LoadPlugins()
         {
-            if (IsPluginEnvironmentReady())
+            if (PluginHelper.IsPluginEnvironmentReady())
             {
                 // Load native JSON plugins
                 await JsonPluginHandler.LoadPlugins("plugins", treePlugins.Nodes, logger);
@@ -116,74 +102,32 @@ namespace BloatynosyNue.Views
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-            if (IsPluginEnvironmentReady())
-            {
-                // Navigate to PluginsReview
-                var pluginsReview = new PluginsReview(this, parentPanel, pendingChanges, logger, PSPlugins);
-                SwitchView.SetView(pluginsReview, parentPanel);
-            }
-            else
-            {
-                MessageBox.Show("The plugin environment is not ready. Please check your setup.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-        private void btnBack_Click(object sender, EventArgs e)
-        {
-            SwitchView.GoBack(this.Parent as Panel);
+            var pluginsReview = new PluginsReview(this, this.Parent as Panel, pendingChanges, logger, PSPlugins);
+            SwitchView.SetView(pluginsReview, this.Parent as Panel);
         }
 
         private async void btnPluginStore_Click(object sender, EventArgs e)
         {
-            if (!IsPluginEnvironmentReady())
+            if (!PluginHelper.IsPluginEnvironmentReady())
             {
                 if (MessageBox.Show(
-                 Locales.Strings.formPlugins_status_notReady.Replace(@"\n", Environment.NewLine),
+                    Locales.Strings.formPlugins_status_notReady.Replace(@"\n", Environment.NewLine),
                     "Store",
-                     MessageBoxButtons.YesNo,
-                     MessageBoxIcon.Question) == DialogResult.Yes)
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    string pluginFolderPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "plugins");
-                    string downloadUrl = "https://github.com/builtbybel/Bloatynosy/raw/main/plugins/Newtonsoft.Json.dll";
-                    string dllPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Newtonsoft.Json.dll");
-
-                    try
-                    {
-                        // Create Plugin directory if it doesn't exist
-                        if (!Directory.Exists(pluginFolderPath))
-                        {
-                            Directory.CreateDirectory(pluginFolderPath);
-                        }
-
-                        using (HttpClient client = new HttpClient())
-                        {
-                            var response = await client.GetAsync(downloadUrl);
-                            response.EnsureSuccessStatusCode();
-
-                            using (var fileStream = new FileStream(dllPath, FileMode.Create, FileAccess.Write, FileShare.None))
-                            {
-                                await response.Content.CopyToAsync(fileStream);
-                            }
-                        }
-
-                        MessageBox.Show(Locales.Strings.formPlugins_status_Ready.Replace(@"\n", Environment.NewLine), "", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show($"Error: {ex.Message}\nPlease try again later.", "Download Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        return;
-                    }
+                    // Download the plugin components
+                    await PluginHelper.DownloadPlugins();
                 }
                 else
                 {
-                 //   MessageBox.Show("No worries, maybe next time!", "Cancelled", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     return;
                 }
             }
 
-            // Open the store if the environment is ready
-            StoreForm storeForm = new StoreForm(this);
-            storeForm.ShowDialog();
+            // Switch to the Plugin Store
+            MainForm mainForm = (MainForm)Application.OpenForms["MainForm"];
+            mainForm.ShowPluginStore();
         }
 
         public void ShowRandomDonationPrompt()
@@ -207,9 +151,35 @@ namespace BloatynosyNue.Views
             }
         }
 
+        // Refresh the tree view
+        public void RefreshPlugins()
+        {
+            treePlugins.Nodes.Clear();
+
+            // Reload
+            LoadPlugins();
+        }
+
         private void btnDonate_Click(object sender, EventArgs e)
         {
             ShowRandomDonationPrompt();
+        }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            RefreshPlugins();
+        }
+
+        private void btnPluginsDir_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Process.Start("explorer.exe", pluginsDirectory);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Failed to open plugins directory: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
