@@ -1,6 +1,9 @@
 # The Bloaty and the Nosy - No Bloat, No Problem!
 
 
+![Animation](https://github.com/user-attachments/assets/69bdf275-34de-4d41-b992-a7916be7dca7)
+
+
 You probably remember my classic BloatynosyApp, which had to go through some renaming and eventually got discontinued. Everything that came after, like the web-based "Winpilot," didn't last long either. Honestly, I thought I was done with Bloatynosy-well, at least with the name. But then, during a recent visit to a well-known company, I saw an employee Googling the app and trying to download it, and I had to stifle a laugh. Apparently, the legend lives on. The employee and I had a good laugh about it, and he even called it the epitome of debloating.
 
 Sometimes, I think a little too long about things, and then a useful project just pops out. Bloatynosy was one of those projects. Sure, the name wasn't for everyone, but it was the go-to tool for cleaning up and debloating Windows. Recently, I added an OOBE assistant called "Fresh11" to the FlybyScript—basically, an all-in-one solution and I figured, why not use the same foundation to bring Bloatynosy back to life?
