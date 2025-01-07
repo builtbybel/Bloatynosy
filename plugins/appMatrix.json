@@ -1,0 +1,135 @@
+﻿{
+  "filters": [
+    {
+      "name": "Most Annoying Bloatware",
+      "criteria": [
+		"Copilot",
+        "Candy",
+        "Instagram",
+        "Twitter",
+        "TikTok",
+        "Xbox",
+        "Spotify",
+        "YourPhone",
+        "BubbleWitch",
+        "Solitaire",
+        "Minecraft",
+        "FeedbackHub",
+        "Skype",
+        "News",
+        "OneNote",
+        "Tips",
+        "3DViewer",
+        "Paint3D",
+        "MixedReality",
+        "Maps",
+        "Weather",
+        "Groove",
+        "Movies",
+        "Cortana",
+        "Teams",
+        "People",
+        "Xbox Live",
+        "GetHelp",
+        "Mail",
+        "Calendar",
+        "ContactSupport",
+        "GamePass",
+        "ToDo",
+        "Hulu",
+        "Picsart",
+        "Adobe",
+        "Clipchamp",
+        "DevHome",
+        "XboxGameBar",
+        "MicrosoftStore",
+        "Microsoft Solitaire Collection",
+        "Microsoft News",
+        "OneDrive",
+        "SkypePreview",
+        "PhoneLink",
+        "GetOffice",
+        "PowerBI",
+        "OneDrive",
+        "BingWeather",
+        "BingNews",
+        "MixedRealityPortal",
+        "Zune",
+        "BingMaps",
+        "Cortana",
+      ]
+    },
+    {
+      "name": "Microsoft Apps",
+      "criteria": [
+        "Microsoft",
+        "OneDrive"
+      ]
+    },
+    {
+      "name": "Social Media Apps",
+      "criteria": [
+        "Facebook",
+        "Instagram",
+        "Twitter",
+        "Snapchat",
+        "TikTok",
+        "LinkedIn"
+      ]
+    },
+    {
+      "name": "Games",
+      "criteria": [
+        "Solitaire",
+        "Minecraft",
+        "Roblox",
+        "Forza",
+        "SeaOfThieves"
+      ]
+    },
+    {
+      "name": "Video Streaming Apps",
+      "criteria": [
+        "Netflix",
+        "Hulu",
+        "PrimeVideo",
+        "Disney",
+        "YouTube",
+        "AppleTV"
+      ]
+    },
+    {
+      "name": "Productivity Tools",
+      "criteria": [
+        "Office",
+        "Teams",
+        "Evernote",
+        "Trello",
+        "OneNote",
+        "Notion"
+      ]
+    },
+    {
+      "name": "News and Media Apps",
+      "criteria": [
+        "News",
+        "CNN",
+        "BBC",
+        "Fox",
+        "NYTimes",
+        "Reddit"
+      ]
+    },
+    {
+      "name": "Shopping Apps",
+      "criteria": [
+        "Amazon",
+        "eBay",
+        "Walmart",
+        "AliExpress",
+        "Wish",
+        "Etsy"
+      ]
+    }
+  ]
+}
