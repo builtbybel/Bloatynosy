@@ -1,0 +1,13 @@
+{
+  "PlugID": "Block New Outlook Preinstall on Windows 11",
+  "PlugInfo": "This plugin removes the pre-installed Outlook app on Windows 11 builds after 23H2 and blocks future installations.",
+  "PlugCheck": [],
+  "PlugCategory": "Tweaks (Plugins)",
+  "PlugDo": [
+    "Get-AppxPackage -Name Microsoft.OutlookForWindows | Remove-AppxPackage",
+    "reg delete \"HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\WindowsUpdate\\Orchestrator\\UScheduler_Oobe\\OutlookUpdate\" /f"
+  ],
+  "PlugUndo": [
+    "PowerShell -Command \"Write-Output 'There is no undo operation for removing pre-installed Outlook.'\""
+  ]
+}
