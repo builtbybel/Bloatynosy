@@ -1,0 +1,19 @@
+{
+  "PlugID": "Install Winget Apps (Chrome, Firefox, 7zip, VLC)",
+  "PlugInfo": "This feature installs essential applications (here Chrome, Firefox, 7zip, VLC) using the Windows Package Manager (winget).",
+  "PlugCheck": [],
+  "PlugCategory": "Software Installation",
+  "PlugDefaultState": false,
+  "PlugDo": [
+    "winget install -e --id Google.Chrome",
+    "winget install -e --id Mozilla.Firefox",
+    "winget install -e --id 7zip.7zip",
+    "winget install -e --id VLC.VLC"
+  ],
+  "PlugUndo": [
+    "winget uninstall -e --id Google.Chrome",
+    "winget uninstall -e --id Mozilla.Firefox",
+    "winget uninstall -e --id 7zip.7zip",
+    "winget uninstall -e --id VLC.VLC"
+  ]
+}
