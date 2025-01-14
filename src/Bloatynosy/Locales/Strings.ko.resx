@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -145,7 +145,7 @@
     <value>앱을 왼쪽 바구니에서 오른쪽 쓰레기통으로 이동하여 삭제합니다</value>
   </data>
   <data name="formDumputer_ctl_textBoxSearch" xml:space="preserve">
-    <value>필터</value>
+    <value>앱 검색</value>
   </data>
   <data name="formDumputer_status_Loading" xml:space="preserve">
     <value>appx 패키지 로드 중...</value>
@@ -163,7 +163,7 @@
     <value>모든 변경 사항을 적용하려면 '모두 활성화'를 클릭하고, 기본 설정으로 되돌리려면 '모두 비활성화'를 클릭합니다. 필요에 따라 개별적으로 조정할 수도 있습니다.</value>
   </data>
   <data name="formExperience_ctl_textBoxSearch" xml:space="preserve">
-    <value>필터</value>
+    <value>Search</value>
   </data>
   <data name="formExperience_statusPermissions" xml:space="preserve">
     <value>권한이 부족하여 기능 상태를 업데이트하지 못했습니다.</value>
@@ -193,17 +193,17 @@
     <value>확장</value>
   </data>
   <data name="formPlugins_ctl_lblSubHeader" xml:space="preserve">
-    <value>Bloatynosy Nue 의 더 많은 가능성 
+    <value>Bloatynosy Nue의 더 많은 가능성 
 플러그인</value>
   </data>
   <data name="tt_btnSettings" xml:space="preserve">
-    <value>이 앱 정보</value>
+    <value>설정</value>
   </data>
   <data name="tt_btnDumputer" xml:space="preserve">
-    <value>Windows 11 (24H2 및 23H2)에서 사전 설치된 앱을 제거하여 시스템을 깔끔하게 정리하세요.</value>
+    <value>Windows 11 (24H2 및 23H2)에 미리 설치된 앱을 제거하여 시스템 정리</value>
   </data>
   <data name="tt_btnExperience" xml:space="preserve">
-    <value>향상된 개인 정보 보호, 제어 및 개인화를 위한 Windows 11 설정 사용자 지정</value>
+    <value>향상된 개인정보 보호, 제어 및 개인화를 위해 Windows 11 설정 사용자 지정</value>
   </data>
   <data name="tt_btnLogger" xml:space="preserve">
     <value>알림</value>
@@ -215,25 +215,25 @@
     <value>파일 탐색기 광고 비활성화</value>
   </data>
   <data name="_adsFileExplorerAds_desc" xml:space="preserve">
-    <value>이 기능을 사용하면 파일 탐색기에서 광고가 비활성화됩니다.</value>
+    <value>이 기능은 파일 탐색기에서 광고를 비활성화합니다.</value>
   </data>
   <data name="_adsFinishSetupAds" xml:space="preserve">
     <value>설정 완료 광고 비활성화</value>
   </data>
   <data name="_adsFinishSetupAds_desc" xml:space="preserve">
-    <value>이 기능을 사용하면 '디바이스 설정을 완료하겠습니다' 및 기타 광고가 비활성화됩니다.</value>
+    <value>이 기능은 "기기 설정 완료" 및 기타 광고를 비활성화합니다.</value>
   </data>
   <data name="_adsLockScreenAds" xml:space="preserve">
     <value>잠금 화면 팁 및 광고 비활성화</value>
   </data>
   <data name="_adsLockScreenAds_desc" xml:space="preserve">
-    <value>이 기능을 사용하면 잠금 화면에서 팁과 광고를 비활성화할 수 있습니다.</value>
+    <value>이 기능은 잠금 화면에서 팁과 광고를 비활성화합니다.</value>
   </data>
   <data name="_adsPersonalizedAds" xml:space="preserve">
-    <value>맞춤 광고 비활성화</value>
+    <value>개인 맞춤형 광고 비활성화</value>
   </data>
   <data name="_adsPersonalizedAds_desc" xml:space="preserve">
-    <value>이 기능을 사용하면 맞춤 광고가 비활성화됩니다.</value>
+    <value>이 기능은 개인 맞춤형 광고를 비활성화합니다.</value>
   </data>
   <data name="_adsSettingsAds" xml:space="preserve">
     <value>설정 광고 비활성화</value>
@@ -245,43 +245,43 @@
     <value>시작 메뉴 광고 비활성화</value>
   </data>
   <data name="_adsStartmenuAds_desc" xml:space="preserve">
-    <value>이 기능을 사용하면 시작 메뉴에서 광고가 비활성화됩니다.</value>
+    <value>이 기능은 시작 메뉴에서 광고를 비활성화합니다.</value>
   </data>
   <data name="_adsTailoredExperiences" xml:space="preserve">
     <value>맞춤형 경험 비활성화</value>
   </data>
   <data name="_adsTailoredExperiences_desc" xml:space="preserve">
-    <value>맞춤형 환경을 통해 Microsoft는 사용자로부터 정보를 얻어 개인화된 팁, 광고 및 추천을 제공할 수 있습니다. 많은 사람들이 이를 텔레메트리 또는 스파이라고 부릅니다.</value>
+    <value>맞춤형 경험을 통해 Microsoft는 사용자로부터 정보를 받아 개인화된 팁, 광고 및 추천을 제공할 수 있습니다. 많은 사람들이 이를 원격 측정 또는 스파이 활동이라고 부릅니다.</value>
   </data>
   <data name="_adsTipsAndSuggestions" xml:space="preserve">
     <value>일반 팁 및 광고 비활성화</value>
   </data>
   <data name="_adsTipsAndSuggestions_desc" xml:space="preserve">
-    <value>이 기능을 사용하면 일반 팁과 광고가 비활성화됩니다.</value>
+    <value>이 기능은 일반적인 팁과 광고를 비활성화합니다.</value>
   </data>
   <data name="_adsWelcomeExperienceAds" xml:space="preserve">
     <value>환영 경험 광고 비활성화</value>
   </data>
   <data name="_adsWelcomeExperienceAds_desc" xml:space="preserve">
-    <value>이 기능을 사용하면 시작 환경에서 광고가 비활성화됩니다.</value>
+    <value>이 기능은 환영 경험에서 광고를 비활성화합니다.</value>
   </data>
   <data name="_aiCopilotTaskbar" xml:space="preserve">
     <value>작업 표시줄에 Copilot 표시 안 함</value>
   </data>
   <data name="_aiCopilotTaskbar_desc" xml:space="preserve">
-    <value>이 기능을 사용하면 작업 표시줄에서 Copilot이 비활성화됩니다.</value>
+    <value>이 기능은 작업 표시줄에서 Copilot을 비활성화합니다.</value>
   </data>
   <data name="_aiRecallMachine" xml:space="preserve">
-    <value>시스템 전체 스냅샷 허용 안 함</value>
+    <value>시스템 전반에 걸친 스냅샷 허용 안 함</value>
   </data>
   <data name="_aiRecallMachine_desc" xml:space="preserve">
-    <value>이 기능은 시스템 전체 스냅샷을 비활성화합니다.</value>
+    <value>이 기능은 시스템 전체의 스냅샷을 비활성화합니다.</value>
   </data>
   <data name="_aiRecallUser" xml:space="preserve">
     <value>Windows에서 화면 스냅샷 저장 허용 안 함</value>
   </data>
   <data name="_aiRecallUser_desc" xml:space="preserve">
-    <value>이 기능을 사용하면 화면의 스냅샷을 저장할 때 리콜 기능이 비활성화됩니다.”</value>
+    <value>이 기능은 화면 스냅샷을 저장할 때 호출을 비활성화합니다."</value>
   </data>
   <data name="_gamingGameDVR" xml:space="preserve">
     <value>게임 DVR 비활성화</value>
@@ -290,10 +290,10 @@
     <value>이 기능은 게임 DVR을 비활성화합니다.</value>
   </data>
   <data name="_gamingPowerThrottling" xml:space="preserve">
-    <value>전원 스로틀링 비활성화</value>
+    <value>전원 조절 비활성화</value>
   </data>
   <data name="_gamingPowerThrottling_desc" xml:space="preserve">
-    <value>이 기능은 전원 스로틀링을 비활성화합니다.</value>
+    <value>이 기능은 전원 조절을 비활성화합니다.</value>
   </data>
   <data name="_gamingVisualFX" xml:space="preserve">
     <value>시각 효과 비활성화</value>
@@ -308,43 +308,43 @@
     <value>위치 추적 비활성화</value>
   </data>
   <data name="_privacyLocationTracking_desc" xml:space="preserve">
-    <value>위치 추적 사용 안 함 (Windows가 사용자 위치에 액세스하지 못하도록 함)</value>
+    <value>위치 추적 비활성화　(Windows가 사용자의 위치에 액세스할 수 없도록 함)</value>
   </data>
   <data name="_privacyPrivacyExperience" xml:space="preserve">
     <value>로그인 시 개인정보 설정 경험 비활성화</value>
   </data>
   <data name="_privacyPrivacyExperience_desc" xml:space="preserve">
-    <value>이 기능을 사용하면 로그인 시 개인정보 설정 경험이 비활성화됩니다.</value>
+    <value>이 기능은 로그인 시 개인정보 설정 경험을 비활성화합니다.</value>
   </data>
   <data name="_privacyTelemetry" xml:space="preserve">
     <value>원격 측정 데이터 수집 끄기</value>
   </data>
   <data name="_privacyTelemetry_desc" xml:space="preserve">
-    <value>이 기능은 원격 분석 데이터 수집을 끄고 데이터가 Microsoft로 전송되지 않도록 합니다.</value>
+    <value>이 기능은 원격 측정 데이터 수집을 차단하고 데이터가 Microsoft로 전송되는 것을 방지합니다.</value>
   </data>
   <data name="_uiFullContextMenus" xml:space="preserve">
     <value>Windows 11에서 전체 컨텍스트 메뉴 표시</value>
   </data>
   <data name="_uiFullContextMenus_desc" xml:space="preserve">
-    <value>이 기능을 사용하면 Windows 11에서 전체 상황에 맞는 메뉴를 사용할 수 있습니다.</value>
+    <value>이 기능은 Windows 11에서 전체 컨텍스트 메뉴를 활성화합니다.</value>
   </data>
   <data name="_uiLockScreen" xml:space="preserve">
     <value>개인화된 잠금 화면 사용하지 않음</value>
   </data>
   <data name="_uiLockScreen_desc" xml:space="preserve">
-    <value>이 기능을 사용하면 개인화된 잠금 화면이 비활성화됩니다.</value>
+    <value>이 기능은 개인 맞춤형 잠금 화면을 비활성화합니다.</value>
   </data>
   <data name="_uiSearchboxTaskbarMode" xml:space="preserve">
     <value>작업 표시줄의 검색창 숨기기</value>
   </data>
   <data name="_uiSearchboxTaskbarMode_desc" xml:space="preserve">
-    <value>이 기능은 작업 표시줄의 검색창을 숨깁니다.</value>
+    <value>이 기능은 작업 표시줄의 검색창을 숨깁니다</value>
   </data>
   <data name="_uiShowOrHideMostUsedApps" xml:space="preserve">
     <value>시작 메뉴에서 가장 많이 사용하는 앱 숨기기</value>
   </data>
   <data name="_uiShowOrHideMostUsedApps_desc" xml:space="preserve">
-    <value>이 기능은 시작 메뉴에서 가장 많이 사용하는 앱을 숨깁니다.</value>
+    <value>이 기능은 시작 메뉴에서 가장 많이 사용하는 앱을 숨깁니다</value>
   </data>
   <data name="_uiShowTaskViewButton" xml:space="preserve">
     <value>작업 표시줄의 작업 보기 버튼 숨기기</value>
@@ -430,5 +430,17 @@ Bloatynosy Nue가 여러분의 삶을 더 편하게 만들었다면, 제가 계�
   </data>
   <data name="formDumputer_status_countPackages" xml:space="preserve">
     <value>앱 패키지가 로드됨:</value>
+  </data>
+  <data name="formDumputer_ctl_lblMoreInfo" xml:space="preserve">
+    <value>더 많은 정보</value>
+  </data>
+  <data name="formSettings_ctl_lblSecLanguage" xml:space="preserve">
+    <value>언어</value>
+  </data>
+  <data name="formSettings_ctl_lblSecAboutApp" xml:space="preserve">
+    <value>앱 소개</value>
+  </data>
+  <data name="ctl_btnStore" xml:space="preserve">
+    <value>플러그인 스토어로 전환</value>
   </data>
 </root>
