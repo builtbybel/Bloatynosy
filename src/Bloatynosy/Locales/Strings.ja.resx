@@ -1,0 +1,445 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ctl_btnBack" xml:space="preserve">
+    <value>戻る</value>
+  </data>
+  <data name="ctl_btnDumputer" xml:space="preserve">
+    <value>Dumputer™</value>
+  </data>
+  <data name="ctl_btnExperience" xml:space="preserve">
+    <value>エクスペリエンス</value>
+  </data>
+  <data name="ctl_lblHeader" xml:space="preserve">
+    <value>Windows 11 をセットアップ</value>
+  </data>
+  <data name="ctl_lblSteps" xml:space="preserve">
+    <value>したいと思っていることは</value>
+  </data>
+  <data name="ctl_lblSubHeader" xml:space="preserve">
+    <value>Windows 11 のプライバシーとパーソナライゼーションを強化とブロートウェアの削除と整理を行い、コミュニティプラグインで機能を強化します。</value>
+  </data>
+  <data name="formDumputer_tt_btnRemove" xml:space="preserve">
+    <value>削除</value>
+  </data>
+  <data name="formDumputer_ctl_lblHeader" xml:space="preserve">
+    <value>アプリをダンプ</value>
+  </data>
+  <data name="formDumputer_ctl_lblSubHeader" xml:space="preserve">
+    <value>アプリを削除するには、左のバスケットから右のごみ箱に移動します。</value>
+  </data>
+  <data name="formDumputer_ctl_textBoxSearch" xml:space="preserve">
+    <value>アプリを検索</value>
+  </data>
+  <data name="formDumputer_status_Loading" xml:space="preserve">
+    <value>appx パッケージを読み込んでいます...</value>
+  </data>
+  <data name="formExperience_ctl_btnApply" xml:space="preserve">
+    <value>すべて有効化する</value>
+  </data>
+  <data name="formExperience_ctl_btnRevert" xml:space="preserve">
+    <value>すべて無効化する</value>
+  </data>
+  <data name="formExperience_ctl_lblHeader" xml:space="preserve">
+    <value>エクスペリエンスをカスタマイズ</value>
+  </data>
+  <data name="formExperience_ctl_lblSubHeader" xml:space="preserve">
+    <value>すべての設定を適用するには「すべて有効化する」をクリック、既定の設定に戻すには「すべて無効化する」をクリックします。必要に応じて個別に設定することもできます。</value>
+  </data>
+  <data name="formExperience_ctl_textBoxSearch" xml:space="preserve">
+    <value>検索</value>
+  </data>
+  <data name="formExperience_statusPermissions" xml:space="preserve">
+    <value>権限が不十分なため、機能のステータスを更新できませんでした。</value>
+  </data>
+  <data name="formExperience_status_Disabled" xml:space="preserve">
+    <value>無効化</value>
+  </data>
+  <data name="formExperience_status_Enabled" xml:space="preserve">
+    <value>有効化</value>
+  </data>
+  <data name="formPluginsReview_ctl_btnRun" xml:space="preserve">
+    <value>実行</value>
+  </data>
+  <data name="formPluginsReview_ctl_btnViewSc" xml:space="preserve">
+    <value>スクリプトを表示</value>
+  </data>
+  <data name="formPluginsReview_ctl_lblHeader" xml:space="preserve">
+    <value>選択した内容を確認</value>
+  </data>
+  <data name="formPlugins_ctl_btnNext" xml:space="preserve">
+    <value>次へ</value>
+  </data>
+  <data name="formPlugins_ctl_btnPluginStore" xml:space="preserve">
+    <value>ストアを開く</value>
+  </data>
+  <data name="formPlugins_ctl_lblHeader" xml:space="preserve">
+    <value>拡張</value>
+  </data>
+  <data name="formPlugins_ctl_lblSubHeader" xml:space="preserve">
+    <value>Bloatynosy Nue プラグインで可能性が広がります</value>
+  </data>
+  <data name="tt_btnSettings" xml:space="preserve">
+    <value>設定</value>
+  </data>
+  <data name="tt_btnDumputer" xml:space="preserve">
+    <value>Windows 11 (24H2 または 23H2) にプリインストールされているアプリを削除してシステムを整理します</value>
+  </data>
+  <data name="tt_btnExperience" xml:space="preserve">
+    <value>Windows 11 の設定をカスタマイズしてプライバシー、コントロール、パーソナライズを強化します</value>
+  </data>
+  <data name="tt_btnLogger" xml:space="preserve">
+    <value>通知</value>
+  </data>
+  <data name="tt_btnPlugins" xml:space="preserve">
+    <value>プラグイン</value>
+  </data>
+  <data name="_adsFileExplorerAds" xml:space="preserve">
+    <value>ファイルエクスプローラーの広告を無効化する</value>
+  </data>
+  <data name="_adsFileExplorerAds_desc" xml:space="preserve">
+    <value>この機能でファイルエクスプローラーの広告が無効化されます。</value>
+  </data>
+  <data name="_adsFinishSetupAds" xml:space="preserve">
+    <value>セットアップ完了の広告を無効化する</value>
+  </data>
+  <data name="_adsFinishSetupAds_desc" xml:space="preserve">
+    <value>この機能で「デバイスのセットアップを完了しましょう」などの広告が無効化されます。</value>
+  </data>
+  <data name="_adsLockScreenAds" xml:space="preserve">
+    <value>ロック画面のヒントと広告を無効化する</value>
+  </data>
+  <data name="_adsLockScreenAds_desc" xml:space="preserve">
+    <value>この機能でロック画面のヒントと広告が無効化されます。</value>
+  </data>
+  <data name="_adsPersonalizedAds" xml:space="preserve">
+    <value>パーソナライズされた広告を無効化する</value>
+  </data>
+  <data name="_adsPersonalizedAds_desc" xml:space="preserve">
+    <value>この機能でパーソナライズされた広告が無効化されます。</value>
+  </data>
+  <data name="_adsSettingsAds" xml:space="preserve">
+    <value>設定の広告を無効化する</value>
+  </data>
+  <data name="_adsSettingsAds_desc" xml:space="preserve">
+    <value>この機能で設定での広告が無効化されます。</value>
+  </data>
+  <data name="_adsStartmenuAds" xml:space="preserve">
+    <value>スタート メニューの広告を無効化する</value>
+  </data>
+  <data name="_adsStartmenuAds_desc" xml:space="preserve">
+    <value>この機能でスタート メニューの広告が無効化されます。</value>
+  </data>
+  <data name="_adsTailoredExperiences" xml:space="preserve">
+    <value>カスタマイズされたエクスペリエンスを無効化する</value>
+  </data>
+  <data name="_adsTailoredExperiences_desc" xml:space="preserve">
+    <value>カスタマイズされたエクスペリエンスにより、Microsoft はユーザーから情報を取得してパーソナライズされたヒントや広告、推奨事項を提供できるようにします。多くの人はこれをテレメトリ、あるいはスパイと呼ぶでしょう。</value>
+  </data>
+  <data name="_adsTipsAndSuggestions" xml:space="preserve">
+    <value>一般的なヒントと広告を無効化する</value>
+  </data>
+  <data name="_adsTipsAndSuggestions_desc" xml:space="preserve">
+    <value>この機能で一般的なヒントと広告が無効化されます。</value>
+  </data>
+  <data name="_adsWelcomeExperienceAds" xml:space="preserve">
+    <value>ウェルカムエクスペリエンス広告を無効化する</value>
+  </data>
+  <data name="_adsWelcomeExperienceAds_desc" xml:space="preserve">
+    <value>この機能でウェルカムエクスペリエンスでの広告が無効化されます。</value>
+  </data>
+  <data name="_aiCopilotTaskbar" xml:space="preserve">
+    <value>Copilot をタスク バーに表示しない</value>
+  </data>
+  <data name="_aiCopilotTaskbar_desc" xml:space="preserve">
+    <value>この機能でタスク バーの Copilot が無効化されます。</value>
+  </data>
+  <data name="_aiRecallMachine" xml:space="preserve">
+    <value>システム全体のスナップショットを許可しない</value>
+  </data>
+  <data name="_aiRecallMachine_desc" xml:space="preserve">
+    <value>この機能でシステム全体のスナップショットが無効化されます。</value>
+  </data>
+  <data name="_aiRecallUser" xml:space="preserve">
+    <value>Windows による画面のスナップショットの保存を許可しない</value>
+  </data>
+  <data name="_aiRecallUser_desc" xml:space="preserve">
+    <value>この機能で Recall による画面のスナップショットの保存機能が無効化されます。</value>
+  </data>
+  <data name="_gamingGameDVR" xml:space="preserve">
+    <value>Game DVR を無効化する</value>
+  </data>
+  <data name="_gamingGameDVR_desc" xml:space="preserve">
+    <value>この機能で Game DVR が無効化されます。</value>
+  </data>
+  <data name="_gamingPowerThrottling" xml:space="preserve">
+    <value>電力制限を無効化する</value>
+  </data>
+  <data name="_gamingPowerThrottling_desc" xml:space="preserve">
+    <value>この機能で電力制限を無効化します。</value>
+  </data>
+  <data name="_gamingVisualFX" xml:space="preserve">
+    <value>視覚効果を無効化する</value>
+  </data>
+  <data name="_gamingVisualFX_desc" xml:space="preserve">
+    <value>この機能で Windows の視覚効果を無効化します。</value>
+  </data>
+  <data name="_privacyActivityHistory" xml:space="preserve">
+    <value>アクティビティの履歴を無効化する</value>
+  </data>
+  <data name="_privacyLocationTracking" xml:space="preserve">
+    <value>位置情報の追跡を無効化する</value>
+  </data>
+  <data name="_privacyLocationTracking_desc" xml:space="preserve">
+    <value>位置情報の追跡を無効化します (Windows が位置情報にアクセスできないようにします)</value>
+  </data>
+  <data name="_privacyPrivacyExperience" xml:space="preserve">
+    <value>サインイン時にプライバシーのエクスペリエンス設定を無効化する</value>
+  </data>
+  <data name="_privacyPrivacyExperience_desc" xml:space="preserve">
+    <value>この機能でサインイン時にプライバシーのエクスペリエンス設定を無効化します。</value>
+  </data>
+  <data name="_privacyTelemetry" xml:space="preserve">
+    <value>テレメトリデータ収集をオフにする</value>
+  </data>
+  <data name="_privacyTelemetry_desc" xml:space="preserve">
+    <value>この機能でテレメトリデータの収集がオフになり、データが Microsoft に送信されなくなります。</value>
+  </data>
+  <data name="_uiFullContextMenus" xml:space="preserve">
+    <value>Windows 11 でフルコンテキストメニューを表示する</value>
+  </data>
+  <data name="_uiFullContextMenus_desc" xml:space="preserve">
+    <value>この機能で Windows 11 の完全なコンテキストメニューが有効化されます。</value>
+  </data>
+  <data name="_uiLockScreen" xml:space="preserve">
+    <value>パーソナライズされたロック画面を使用しない</value>
+  </data>
+  <data name="_uiLockScreen_desc" xml:space="preserve">
+    <value>この機能でパーソナライズされたロック画面が無効化されます。</value>
+  </data>
+  <data name="_uiSearchboxTaskbarMode" xml:space="preserve">
+    <value>Hide search box on taskbar</value>
+  </data>
+  <data name="_uiSearchboxTaskbarMode_desc" xml:space="preserve">
+    <value>この機能でタスク バーの検索ボックスを非表示する</value>
+  </data>
+  <data name="_uiShowOrHideMostUsedApps" xml:space="preserve">
+    <value>スタート メニューでよく使うアプリを非表示にする</value>
+  </data>
+  <data name="_uiShowOrHideMostUsedApps_desc" xml:space="preserve">
+    <value>この機能でスタート メニューで最も使われるアプリを非表示にします。</value>
+  </data>
+  <data name="_uiShowTaskViewButton" xml:space="preserve">
+    <value>タスク バーのタスク ビューボタンを非表示にする</value>
+  </data>
+  <data name="_uiShowTaskViewButton_desc" xml:space="preserve">
+    <value>この機能でタスク バーのタスク ビューボタンを非表示にします。</value>
+  </data>
+  <data name="_uiStartLayout" xml:space="preserve">
+    <value>スタート メニューにさらに多くのアプリをピン留めする</value>
+  </data>
+  <data name="_uiStartLayout_desc" xml:space="preserve">
+    <value>この機能でスタート メニューにさらに多くのアプリをピン留め可能にします。</value>
+  </data>
+  <data name="_uiTaskbarAlignment" xml:space="preserve">
+    <value>スタート ボタンを左揃えにする</value>
+  </data>
+  <data name="_uiTaskbarAlignment_desc" xml:space="preserve">
+    <value>この機能でスタート ボタンを左揃えにします。</value>
+  </data>
+  <data name="formDumputer_ctl_lblDetails" xml:space="preserve">
+    <value>選択したアプリの詳細</value>
+  </data>
+  <data name="formDumputer_status_Removing" xml:space="preserve">
+    <value>削除しようとしています</value>
+  </data>
+  <data name="formDumputer_status_successRemove" xml:space="preserve">
+    <value>削除が成功しました</value>
+  </data>
+  <data name="formDumputer_status_failedRemove" xml:space="preserve">
+    <value>削除中にエラーが発生しました</value>
+  </data>
+  <data name="formDumputer_status_noItems" xml:space="preserve">
+    <value>ごみ箱にはまだアイテムはありません</value>
+  </data>
+  <data name="formDumputer_status_Refreshing" xml:space="preserve">
+    <value>アプリ一覧を更新中です...</value>
+  </data>
+  <data name="formDumputer_tt_btnRefresh" xml:space="preserve">
+    <value>更新</value>
+  </data>
+  <data name="formDumputer_tt_btnAdd" xml:space="preserve">
+    <value>追加</value>
+  </data>
+  <data name="formDumputer_ctl_btnUninstall" xml:space="preserve">
+    <value>削除</value>
+  </data>
+  <data name="_privacyActivityHistory_desc" xml:space="preserve">
+    <value>アクティビティ履歴を無効化します (Windows がアクティビティを追跡して保存するのを防ぎます)</value>
+  </data>
+  <data name="formPluginsReview_status_Summary" xml:space="preserve">
+    <value>プラグインが未選択です。適用または元に戻すプラグインを選択してください。</value>
+  </data>
+  <data name="formPluginsReview_status_tobeApplied" xml:space="preserve">
+    <value>適用</value>
+  </data>
+  <data name="formPluginsReview_status_tobeReverted" xml:space="preserve">
+    <value>元に戻す</value>
+  </data>
+  <data name="ctl_Donate" xml:space="preserve">
+    <value>寄付</value>
+  </data>
+  <data name="ctl_DonationPrompts" xml:space="preserve">
+    <value>Bloatynosy Nue にご満足いただけましたか? このプロジェクトをサポートしたいと思った場合は、どんな寄付でもプロジェクトの存続に繋がります!;
+Bloatynosy Nue で日々の向上に繋がったのであれば、魔法が生き続けるように少額の寄付をご検討ください。少額でも非常に助かります!;
+Bloatynosy Nue で Windows 11 を楽しんで頂けている場合は、寄付でプロジェクトの存続に貢献してくれると非常に助かります!;
+Bloatynosy Nue の機能がお気に召したのであれば、少額の寄付でさらなる機能向上にご協力ください。よろしくお願いします!😄;
+Bloatynosy Nue のおかげで Windows 11 を楽しんで使って頂けているならば、寄付でプロジェクトの存続に協力してくれると非常に助かります!;
+Bloatynosy Nue の成果物が気に入った場合は寄付で愛をお伝えください。改善の続行に役立ちます!;
+Bloatynosy Nue がお役に立てたのであれば、この素晴らしいツールの開発を継続できるように少しの寄付をしてくれると非常に助かります!;
+Bloatynosy Nue で生活が楽になったと感じたら、寄付をしてくれると今後の改善に繋がります!</value>
+  </data>
+  <data name="ctl_DonateAsk" xml:space="preserve">
+    <value>寄付をして頂けますか?</value>
+  </data>
+  <data name="formPlugins_ctl_lblInstalled" xml:space="preserve">
+    <value>インストール済み</value>
+  </data>
+  <data name="formPlugins_status_notReady" xml:space="preserve">
+    <value>必要なプラグイン環境が設定されていません。必要なコンポーネントをダウンロードしますか?</value>
+  </data>
+  <data name="formPlugins_status_Ready" xml:space="preserve">
+    <value>ダウンロードが完了しました!\nストアは使用可能です。</value>
+  </data>
+  <data name="formDumputer_status_countPackages" xml:space="preserve">
+    <value>アプリのパッケージを読み込みました:</value>
+  </data>
+  <data name="formDumputer_ctl_lblMoreInfo" xml:space="preserve">
+    <value>その他の情報</value>
+  </data>
+  <data name="formSettings_ctl_lblSecLanguage" xml:space="preserve">
+    <value>言語</value>
+  </data>
+  <data name="formSettings_ctl_lblSecAboutApp" xml:space="preserve">
+    <value>アプリについて</value>
+  </data>
+  <data name="ctl_btnStore" xml:space="preserve">
+    <value>プラグインストアに切り替え</value>
+  </data>
+</root>
