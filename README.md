@@ -105,7 +105,70 @@ before it, so a plugin can correct one of my entries instead of only adding new 
 cannot be read is one missing plugin, not a crash.
 
 App handling has its own file, [`Data/AppRules.ini`](Data/AppRules.ini), which decides what counts as
-a bloatware candidate and what Windows is not allowed to lose.
+a bloatware candidate and what Windows is not allowed to lose. It is the one `.ini` in the folder
+that is not read as a tweak file.
+
+**Settings → Open the folder with the change catalogue** takes you straight there.
+
+</details>
+
+<details>
+<summary><b>Every field a tweak section can carry</b></summary>
+
+The section heading is the name of the tweak and has to be unique. Blank lines are ignored, a line
+starting with `;` is a comment, and a comment may also sit behind a value when a space comes first.
+
+| Key | Meaning |
+|---|---|
+| `Category` | Which group the tweak is listed under: `Ads`, `AI`, `Appearance`, `Edge`, `Gaming`, `Privacy`, `System`, `Taskbar`, `Updates`. An unknown name shows as the raw key |
+| `Description` | The plain words shown under the list when the row is selected |
+| `Restart` | `explorer` or `system` when the change is only visible afterwards. The report collects these, each one once. Leave it out when the change takes effect right away |
+| `OsVersion` | `11` for Windows 11 only, `10` for Windows 10 only. Left out means both |
+| `DefaultSelected` | `true` ticks the tweak after a check, as long as no profile is chosen |
+| `Path` | The full registry path including the hive, for example `HKEY_CURRENT_USER\Software\...` |
+| `ValueName` | The value to write. `(Default)` writes the key's unnamed value |
+| `ValueType` | `DWORD` or `String`. Left out means `DWORD` |
+| `RecommendedValue` | What applying the tweak writes. The check compares the value on the pc against this one |
+| `DefaultValue` | What resetting writes. Without it the tweak cannot be put back. `<delete>` or `<deletevalue>` removes just that one value and leaves the rest of the key alone |
+
+One tweak can write several values. The second one uses `Path2`, `ValueName2`, `ValueType2`,
+`RecommendedValue2` and `DefaultValue2`, the third one `Path3`, and so on. The numbering stops at the
+first missing `Path` or `ValueName`. A tweak is applied only when every one of its values can be
+written, so a tweak that needs two keys never ends up half done.
+
+A section without a single usable value is skipped. Paths under `HKEY_LOCAL_MACHINE`,
+`HKEY_CLASSES_ROOT` or anything containing `\Policies\` need administrator rights, and the app says
+so instead of trying and failing quietly.
+
+Names and descriptions can be translated. A locale file entry `Tweak_Name_<section>` replaces the
+heading and `Tweak_Detail_<section>` replaces the description.
+
+</details>
+
+<details>
+<summary><b>Profiles</b></summary>
+
+A profile is a plain JSON file holding the names of the tweaks and the families of the apps that a
+check should tick by itself.
+
+```json
+{
+  "Name": "Workshop",
+  "Tweaks": ["Disable Start Menu Ads", "Disable Tips and Suggestions"],
+  "Apps": ["Microsoft.BingWeather"]
+}
+```
+
+Choose one under **Settings → Profile** and the path is remembered, so it survives a restart. Without
+a profile the catalogue decides, which is what `DefaultSelected` has always meant.
+
+The report offers **Save this pc as a profile** when a run is finished. Hand the file to the next
+machine and the check arrives ticked.
+
+The tweak list is the state the pc reached, not what that one run happened to change, so a profile
+taken from an already clean machine still names every setting. The app list can only hold what that
+run uninstalled: Windows lists installed packages, so an app that was gone beforehand is invisible to
+the inventory and cannot be written down.
 
 </details>
 
