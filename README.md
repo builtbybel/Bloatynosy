@@ -14,7 +14,7 @@
 ## I gave up on this app more than once
 
 The classic Bloatynosy got renamed, then discontinued. Winpilot replaced it and did not last.
-Everything I built after that added more and solved less. None of it ever beat version 0.85, which
+Everything I built after that added more and solved less. [None of it ever beat version 0.85](https://github.com/builtbybel/Bloatynosy/releases/tag/0.85.0), which
 was one window, a list, and a button.
 
 I kept taking the app in new directions. New names, new interfaces, new ideas. Some of those
