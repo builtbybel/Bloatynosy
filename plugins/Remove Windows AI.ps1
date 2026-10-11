@@ -1,1 +1,0 @@
-﻿iwr https://raw.githubusercontent.com/zoicware/RemoveWindowsAI/main/RemoveAi.ps1 | iex

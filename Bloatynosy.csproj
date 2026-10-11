@@ -1,0 +1,63 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net48</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <LangVersion>latest</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>Bloatynosy</AssemblyName>
+    <!-- the name is a name, not a word: Application.ProductName reads it, nothing translates it -->
+    <Product>Bloatynosy</Product>
+    <RootNamespace>Bloatynosy</RootNamespace>
+    <Version>1.0.36</Version>
+    <AssemblyVersion>1.0.36</AssemblyVersion>
+    <FileVersion>1.0.36</FileVersion>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- one dll with no dependency chain, so no binding redirect and no config parse at startup -->
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+
+  <!-- subtype makes visual studio offer the designer; dependentupon nests its generated files
+       under the source you open. without the first, a form opens as code. -->
+  <ItemGroup>
+    <Compile Update="MainForm.cs"><SubType>Form</SubType></Compile>
+    <Compile Update="MainForm.Footer.cs"><DependentUpon>MainForm.cs</DependentUpon></Compile>
+    <Compile Update="MainForm.Designer.cs"><DependentUpon>MainForm.cs</DependentUpon></Compile>
+    <EmbeddedResource Update="MainForm.resx"><DependentUpon>MainForm.cs</DependentUpon></EmbeddedResource>
+
+    <Compile Update="Views\CheckView.cs"><SubType>UserControl</SubType></Compile>
+    <Compile Update="Views\CheckView.Designer.cs"><DependentUpon>CheckView.cs</DependentUpon></Compile>
+    <EmbeddedResource Update="Views\CheckView.resx"><DependentUpon>CheckView.cs</DependentUpon></EmbeddedResource>
+
+    <Compile Update="Views\ResultView.cs"><SubType>UserControl</SubType></Compile>
+    <Compile Update="Views\ResultView.Designer.cs"><DependentUpon>ResultView.cs</DependentUpon></Compile>
+    <EmbeddedResource Update="Views\ResultView.resx"><DependentUpon>ResultView.cs</DependentUpon></EmbeddedResource>
+
+    <Compile Update="Views\SettingsView.cs"><SubType>UserControl</SubType></Compile>
+    <Compile Update="Views\SettingsView.Designer.cs"><DependentUpon>SettingsView.cs</DependentUpon></Compile>
+    <EmbeddedResource Update="Views\SettingsView.resx"><DependentUpon>SettingsView.cs</DependentUpon></EmbeddedResource>
+
+    <Compile Update="Views\ReportView.cs"><SubType>UserControl</SubType></Compile>
+    <Compile Update="Views\ReportView.Designer.cs"><DependentUpon>ReportView.cs</DependentUpon></Compile>
+    <EmbeddedResource Update="Views\ReportView.resx"><DependentUpon>ReportView.cs</DependentUpon></EmbeddedResource>
+
+    <Compile Update="Views\AppRemovalDialog.cs"><SubType>Form</SubType></Compile>
+    <Compile Update="Views\AppRemovalDialog.Designer.cs"><DependentUpon>AppRemovalDialog.cs</DependentUpon></Compile>
+    <Compile Update="Views\ExplainDialog.cs"><SubType>Form</SubType></Compile>
+    <Compile Update="Views\ExplainDialog.Designer.cs"><DependentUpon>ExplainDialog.cs</DependentUpon></Compile>
+  </ItemGroup>
+
+  <!-- tweak plugins and app rules are separate ini files copied beside the app -->
+  <ItemGroup>
+    <None Update="Data\*.ini" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="Localization\*.json" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+</Project>
