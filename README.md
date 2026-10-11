@@ -14,7 +14,7 @@
 ## I gave up on this app more than once
 
 The classic Bloatynosy got renamed, then discontinued. Winpilot replaced it and did not last.
-Everything I built after that added more and solved less. [None of it ever beat version 0.85](https://github.com/builtbybel/Bloatynosy/releases/tag/0.85.0), which
+Everything I built after that added more and solved less. None of it ever beat version 0.85, which
 was one window, a list, and a button.
 
 I kept taking the app in new directions. New names, new interfaces, new ideas. Some of those
@@ -95,7 +95,7 @@ Windows marks as non removable, as a framework, or as a resource package are ref
 <details>
 <summary><b>The tweak list, and how plugins work</b></summary>
 
-Everything Bloatynosy knows lives in [`Data/Tweaks.ini`](Data/Tweaks.ini). One section is one
+Everything Bloatynosy knows lives in [`Data/WinRules.ini`](Data/WinRules.ini). One section is one
 setting: where it lives, what value applies it, what value puts it back, which category it belongs
 to and whether it should be ticked by default.
 
@@ -125,18 +125,18 @@ starting with `;` is a comment, and a comment may also sit behind a value when a
 | `Restart` | `explorer` or `system` when the change is only visible afterwards. The report collects these, each one once. Leave it out when the change takes effect right away |
 | `OsVersion` | `11` for Windows 11 only, `10` for Windows 10 only. Left out means both |
 | `DefaultSelected` | `true` ticks the tweak after a check, as long as no profile is chosen |
-| `Path` | The full registry path including the hive, for example `HKEY_CURRENT_USER\Software\...` |
+| `Path` | Hive and key in one line. Both spellings work: `HKCU\Software\...` or `HKEY_CURRENT_USER\Software\...`, and the same for `HKLM`, `HKCR`, `HKU` and `HKCC` |
 | `ValueName` | The value to write. `(Default)` writes the key's unnamed value |
-| `ValueType` | `DWORD` or `String`. Left out means `DWORD` |
+| `ValueType` | `DWORD`, `QWORD`, `String`, `ExpandString` or `Binary`. Left out means `DWORD`. Numbers may be written as `0x1`, binary as hex pairs |
 | `RecommendedValue` | What applying the tweak writes. The check compares the value on the pc against this one |
-| `DefaultValue` | What resetting writes. Without it the tweak cannot be put back. `<delete>` or `<deletevalue>` removes just that one value and leaves the rest of the key alone |
+| `DefaultValue` | What resetting writes. Without it the tweak cannot be put back. `<deletevalue>` removes just that one value and leaves the rest of the key alone, `<delete>` removes the whole key |
 
 One tweak can write several values. The second one uses `Path2`, `ValueName2`, `ValueType2`,
 `RecommendedValue2` and `DefaultValue2`, the third one `Path3`, and so on. The numbering stops at the
 first missing `Path` or `ValueName`. A tweak is applied only when every one of its values can be
 written, so a tweak that needs two keys never ends up half done.
 
-A section without a single usable value is skipped. Paths under `HKEY_LOCAL_MACHINE`,
+A section without a single usable value is skipped. Paths under the machine hive, under
 `HKEY_CLASSES_ROOT` or anything containing `\Policies\` need administrator rights, and the app says
 so instead of trying and failing quietly.
 
@@ -169,6 +169,23 @@ The tweak list is the state the pc reached, not what that one run happened to ch
 taken from an already clean machine still names every setting. The app list can only hold what that
 run uninstalled: Windows lists installed packages, so an app that was gone beforehand is invisible to
 the inventory and cannot be written down.
+
+</details>
+
+<details>
+<summary><b>Ignoring entries</b></summary>
+
+A setting you have decided against keeps turning up at every check. Right click it and choose
+**Ignore this entry** and it leaves the groups above. It is not gone: it moves into **Ignored**, a
+closed group at the bottom of the list, and the same right click brings it back. Installed apps work
+the same way.
+
+Ignored entries can never be ticked, so a profile that asks for one cannot apply it behind your back.
+The check itself still looks at everything, which is why the number on the start page stays honest.
+
+The list lives in `Data\Settings.json` and holds section names and package families, never the text
+you see, so switching the language leaves it intact. It is yours and stays out of profiles, so a
+profile you hand on hides nothing on the next machine.
 
 </details>
 
