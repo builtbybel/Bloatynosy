@@ -6,6 +6,7 @@
 
 [![Release](https://img.shields.io/github/v/release/builtbybel/Bloatynosy?style=flat-square)](https://github.com/builtbybel/Bloatynosy/releases)
 ![Windows](https://img.shields.io/badge/Windows-10%20%7C%2011-0078D4?style=flat-square)
+![Tweaks](https://img.shields.io/badge/tweaks-98-107C10?style=flat-square)
 
 </div>
 
@@ -53,15 +54,27 @@ Three steps, and the app shows you which one you are on.
 
 The results are a tree, not 300 flat checkboxes. **Available changes** are the ones that still need
 work. **Already applied** holds everything that is set the way the list recommends, so you can pick
-from there if you want a setting back. **Installed apps** is its own group.
+from there if you want a setting back. A tick means the opposite in those two, so every category
+under **Already applied** says "Restore defaults" next to its name. **Installed apps** is its own
+group.
 
 Pick a row and the bottom of the window explains it in plain words. **Show details** adds the
 technical side, the actual registry path and value, for when you want to know exactly what happens.
 
+The search box above the tree filters it while you type. Anything you ticked stays ticked, so you
+can collect a selection out of several searches.
+
+Right click a row, a category or a whole branch for **Apply now** and **Undo now**. That writes those
+few values on the spot, without the three steps and without a report, and the row moves to the other
+branch. It is meant for one setting you want to try, not for a full run.
+
 ### Putting things back
 
 Settings that carry a documented default can be reset. Select them in **Already applied** and the
-button changes from "Apply" to "Reset".
+button changes from "Apply changes" to "Restore defaults".
+
+Some settings only show up once Explorer has been restarted. The report says which ones, and offers
+**Restart Windows Explorer now** so you do not have to sign out. Nothing restarts on its own.
 
 > [!IMPORTANT]
 > Removed Store apps are the exception. Windows has no real undo for an uninstall, so reinstalling
@@ -120,11 +133,13 @@ starting with `;` is a comment, and a comment may also sit behind a value when a
 
 | Key | Meaning |
 |---|---|
-| `Category` | Which group the tweak is listed under: `Ads`, `AI`, `Appearance`, `Edge`, `Gaming`, `Privacy`, `System`, `Taskbar`, `Updates`. An unknown name shows as the raw key |
+| `Category` | Which group the tweak is listed under: `Ads`, `AI`, `Appearance`, `Edge`, `Explorer`, `Gaming`, `Privacy`, `System`, `Taskbar`, `Updates`. An unknown name shows as the raw key |
 | `Description` | The plain words shown under the list when the row is selected |
 | `Restart` | `explorer` or `system` when the change is only visible afterwards. The report collects these, each one once. Leave it out when the change takes effect right away |
 | `OsVersion` | `11` for Windows 11 only, `10` for Windows 10 only. Left out means both |
 | `DefaultSelected` | `true` ticks the tweak after a check, as long as no profile is chosen |
+| `Group` | A free name shared by tweaks that write the same value to different settings. Ticking one unticks the others, and the description says which one it replaces. Leave it out and the tweak stands alone |
+| `RequiresKey` | The tweak is only listed when this registry key exists, which is how an entry for a program nobody installed stays out of the way. Several keys separated by `\|` count as alternatives |
 | `Path` | Hive and key in one line. Both spellings work: `HKCU\Software\...` or `HKEY_CURRENT_USER\Software\...`, and the same for `HKLM`, `HKCR`, `HKU` and `HKCC` |
 | `ValueName` | The value to write. `(Default)` writes the key's unnamed value |
 | `ValueType` | `DWORD`, `QWORD`, `String`, `ExpandString` or `Binary`. Left out means `DWORD`. Numbers may be written as `0x1`, binary as hex pairs |
@@ -186,6 +201,18 @@ The check itself still looks at everything, which is why the number on the start
 The list lives in `Data\Settings.json` and holds section names and package families, never the text
 you see, so switching the language leaves it intact. It is yours and stays out of profiles, so a
 profile you hand on hides nothing on the next machine.
+
+</details>
+
+<details>
+<summary><b>Translating the app</b></summary>
+
+A language is one file in [`Localization\`](Localization), named after its locale. Copy `en.json`,
+translate the values, and the app picks it up on the next start. Nothing has to be compiled.
+
+The one thing to know beforehand: the interface lives in that file, the tweak names and descriptions
+live in `Data\WinRules.ini` and are translated through optional keys. **[TRANSLATIONS.md](TRANSLATIONS.md)
+walks through it.**
 
 </details>
 
