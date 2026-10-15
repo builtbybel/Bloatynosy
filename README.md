@@ -12,6 +12,9 @@
 
 <!-- TODO: showcase image -->
 
+
+<img width="976" height="634" alt="Bloatynosy_Ym9EAEuzsi" src="https://github.com/user-attachments/assets/05869e74-1bf2-47b7-be7e-f7f7082babe1" />
+
 ## I gave up on this app more than once
 
 The classic Bloatynosy got renamed, then discontinued. Winpilot replaced it and did not last.
