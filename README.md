@@ -12,9 +12,6 @@
 
 <!-- TODO: showcase image -->
 
-
-<img width="976" height="634" alt="Bloatynosy_Ym9EAEuzsi" src="https://github.com/user-attachments/assets/05869e74-1bf2-47b7-be7e-f7f7082babe1" />
-
 ## I gave up on this app more than once
 
 The classic Bloatynosy got renamed, then discontinued. Winpilot replaced it and did not last.
@@ -80,14 +77,20 @@ Some settings only show up once Explorer has been restarted. The report says whi
 **Restart Windows Explorer now** so you do not have to sign out. Nothing restarts on its own.
 
 > [!IMPORTANT]
-> Removed Store apps are the exception. Windows has no real undo for an uninstall, so reinstalling
-> means going through the Store.
+> Uninstalled apps are the exception. Windows has no real undo for an uninstall, so a Store app
+> means going through the Store again, and a classic program means its maker's installer.
 
 ### Apps
 
-Apps are never ticked for you. Bloatynosy sorts them into bloatware candidates, personal choices,
-and components Windows needs, and the last group cannot be selected at all. Uninstalling asks once
-more before it starts, because removing an app is a different decision from changing a setting.
+Apps are never ticked for you. Every row says where it came from, a **Store app** or a classic
+**Win32** program, and a known one carries its bloatware mark. Components Windows needs cannot be
+selected at all. Uninstalling asks once more before it starts, because removing an app is a
+different decision from changing a setting.
+
+A Store app is uninstalled for your user account. A Win32 program is a different matter: Bloatynosy
+starts the uninstaller its maker left in the registry, that window takes over, and it works machine
+wide. The report counts those separately as uninstallers started, never as apps removed, because
+whether the maker's window finished the job is not something Bloatynosy can know.
 
 ---
 
@@ -103,8 +106,14 @@ nobody can read.
 A value is checked before it is written, and read back after. If the readback does not match, the
 setting counts as failed and lands in the report instead of silently pretending to have worked.
 
-Installed apps are removed through Windows PowerShell with `Remove-AppxPackage`. Packages that
-Windows marks as non removable, as a framework, or as a resource package are refused.
+Store apps are removed through Windows PowerShell with `Remove-AppxPackage`. Packages that Windows
+marks as non removable, as a framework, or as a resource package are refused.
+
+Classic programs come out of the three `Uninstall` keys in the registry, the same ones the Control
+Panel reads, and are filtered the same way, so updates, runtimes and parts of a bigger program stay
+out of the list. Nothing is ever written there. The `UninstallString` Windows stored is handed to
+`cmd.exe` unchanged, without parsing or rewriting, which is why an `MsiExec /I` entry opens its
+maker's maintenance window instead of removing anything behind your back.
 
 </details>
 
@@ -123,6 +132,13 @@ cannot be read is one missing plugin, not a crash.
 App handling has its own file, [`Data/AppRules.ini`](Data/AppRules.ini), which decides what counts as
 a bloatware candidate and what Windows is not allowed to lose. It is the one `.ini` in the folder
 that is not read as a tweak file.
+
+A section in it sets `Action` to `apps` or `programs`, sets `Safety` to `Safe` or `Protected`, and
+then lists what it means. `Package=` matches a package family, where a leading `*` matches the end of
+the name instead of the start. `Program=` matches plain text in a classic program's displayed name or
+in its publisher, so one line can cover a whole maker. Keep that text long enough to be
+unmistakable, `Program=HP` would also hit a program that merely has HP in its name. Drivers and
+runtimes belong in a `Protected` section, and no rule in the file can lower what Windows itself needs.
 
 **Settings → Open the folder with the change catalogue** takes you straight there.
 
@@ -248,4 +264,4 @@ If a setting does not stick on your machine, or Bloatynosy reports a failure you
 please [open an issue](https://github.com/builtbybel/Bloatynosy/issues) and say which Windows version
 you are on. That helps more than me guessing.
 
-An app icon is still missing and there is polish left to do. It is coming.
+There is polish left to do. It is coming.

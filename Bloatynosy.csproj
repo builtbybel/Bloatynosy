@@ -11,11 +11,15 @@
     <!-- the name is a name, not a word: Application.ProductName reads it, nothing translates it -->
     <Product>Bloatynosy</Product>
     <RootNamespace>Bloatynosy</RootNamespace>
-    <Version>1.0.36</Version>
-    <AssemblyVersion>1.0.36</AssemblyVersion>
-    <FileVersion>1.0.36</FileVersion>
+    <Version>1.01.120</Version>
+    <AssemblyVersion>1.01.120</AssemblyVersion>
+    <FileVersion>1.01.120</FileVersion>
     <ApplicationManifest>app.manifest</ApplicationManifest>
-    <PlatformTarget>x64</PlatformTarget>
+    <!-- anycpu, not x64: the winforms designer host cannot load a pe32plus assembly.
+         prefer32bit false keeps the process 64 bit, so the registry view stays unredirected -->
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+    <ApplicationIcon>AppIcon.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
@@ -28,13 +32,19 @@
        under the source you open. without the first, a form opens as code. -->
   <ItemGroup>
     <Compile Update="MainForm.cs"><SubType>Form</SubType></Compile>
-    <Compile Update="MainForm.Footer.cs"><DependentUpon>MainForm.cs</DependentUpon></Compile>
+    <Compile Update="MainForm.Commands.cs"><DependentUpon>MainForm.cs</DependentUpon></Compile>
     <Compile Update="MainForm.Designer.cs"><DependentUpon>MainForm.cs</DependentUpon></Compile>
     <EmbeddedResource Update="MainForm.resx"><DependentUpon>MainForm.cs</DependentUpon></EmbeddedResource>
+
+    <Compile Update="Controls\SearchField.cs"><SubType>UserControl</SubType></Compile>
+    <Compile Update="Controls\SearchField.Designer.cs"><DependentUpon>SearchField.cs</DependentUpon></Compile>
 
     <Compile Update="Views\CheckView.cs"><SubType>UserControl</SubType></Compile>
     <Compile Update="Views\CheckView.Designer.cs"><DependentUpon>CheckView.cs</DependentUpon></Compile>
     <EmbeddedResource Update="Views\CheckView.resx"><DependentUpon>CheckView.cs</DependentUpon></EmbeddedResource>
+
+    <Compile Update="Views\NavView.cs"><SubType>UserControl</SubType></Compile>
+    <Compile Update="Views\NavView.Designer.cs"><DependentUpon>NavView.cs</DependentUpon></Compile>
 
     <Compile Update="Views\ResultView.cs"><SubType>UserControl</SubType></Compile>
     <Compile Update="Views\ResultView.Designer.cs"><DependentUpon>ResultView.cs</DependentUpon></Compile>
@@ -50,14 +60,18 @@
 
     <Compile Update="Views\AppRemovalDialog.cs"><SubType>Form</SubType></Compile>
     <Compile Update="Views\AppRemovalDialog.Designer.cs"><DependentUpon>AppRemovalDialog.cs</DependentUpon></Compile>
-    <Compile Update="Views\ExplainDialog.cs"><SubType>Form</SubType></Compile>
-    <Compile Update="Views\ExplainDialog.Designer.cs"><DependentUpon>ExplainDialog.cs</DependentUpon></Compile>
+    <Compile Update="Views\DetailWindow.cs"><SubType>Form</SubType></Compile>
+    <Compile Update="Views\DetailWindow.Designer.cs"><DependentUpon>DetailWindow.cs</DependentUpon></Compile>
   </ItemGroup>
 
-  <!-- tweak plugins and app rules are separate ini files copied beside the app -->
+  <!-- tweak plugins, app rules and the mark are assets beside the app, never payload in the exe -->
   <ItemGroup>
     <None Update="Data\*.ini" CopyToOutputDirectory="PreserveNewest" />
+    <None Update="Data\AppIcon.png" CopyToOutputDirectory="PreserveNewest" />
     <Content Include="Localization\*.json" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AppIcon.ico" />
   </ItemGroup>
 
 </Project>
