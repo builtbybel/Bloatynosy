@@ -1,0 +1,4 @@
+# every catalogue file the update button should fetch, one name per line.
+# a new tweak ini reaches the users as soon as its name stands here.
+WinRules.ini
+AppRules.ini
