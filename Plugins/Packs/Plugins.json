@@ -1,0 +1,18 @@
+[
+  {
+    "File": "Gaming.ini",
+    "Name": "Gaming extras",
+    "Author": "builtbybel",
+    "Category": "Gaming",
+    "Count": 5,
+    "Description": "Gpu scheduling, scheduler priority, exclusive fullscreen and rgb."
+  },
+  {
+    "File": "Privacy.ini",
+    "Name": "Privacy extras",
+    "Author": "builtbybel",
+    "Category": "Privacy",
+    "Count": 6,
+    "Description": "Advertising id policy, cloud clipboard, typing data and crash reports."
+  }
+]
