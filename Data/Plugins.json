@@ -1,0 +1,18 @@
+[
+  {
+    "File": "Gaming.ini",
+    "Name": "Gaming tweaks",
+    "Author": "builtbybel",
+    "Category": "Games",
+    "Count": 14,
+    "Description": "Game bar, game mode and the capture service."
+  },
+  {
+    "File": "Privacy.ini",
+    "Name": "Privacy pack",
+    "Author": "builtbybel",
+    "Category": "Privacy",
+    "Count": 22,
+    "Description": "Telemetry, advertising id and activity history."
+  }
+]
