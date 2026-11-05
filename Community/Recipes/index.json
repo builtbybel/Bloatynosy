@@ -1,0 +1,20 @@
+[
+  {
+    "File": "less-ads.json",
+    "Name": "Less advertising",
+    "Author": "Belim",
+    "Description": "Reduce suggestions and promotions in Windows."
+  },
+  {
+    "File": "classic-explorer.json",
+    "Name": "Familiar Explorer",
+    "Author": "Belim",
+    "Description": "Show file extensions, open This PC and use classic context menus."
+  },
+  {
+    "File": "quiet-taskbar.json",
+    "Name": "Quieter taskbar",
+    "Author": "Belim",
+    "Description": "Left alignment, no search box and no Copilot taskbar button."
+  }
+]

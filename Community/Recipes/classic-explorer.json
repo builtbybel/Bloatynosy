@@ -1,0 +1,18 @@
+{
+  "Name": "Familiar Explorer",
+  "Changes": [
+    {
+      "Name": "Show File Extensions",
+      "Reset": false
+    },
+    {
+      "Name": "Open File Explorer in This PC",
+      "Reset": false
+    },
+    {
+      "Name": "Enable Classic Context Menus",
+      "Reset": false
+    }
+  ],
+  "Apps": []
+}

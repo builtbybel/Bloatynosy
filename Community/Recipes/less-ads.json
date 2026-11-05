@@ -1,0 +1,42 @@
+{
+  "Name": "Less advertising",
+  "Changes": [
+    {
+      "Name": "Disable File Explorer Ads",
+      "Reset": false
+    },
+    {
+      "Name": "Disable Finish Setup Ads",
+      "Reset": false
+    },
+    {
+      "Name": "Disable Lock Screen Ads",
+      "Reset": false
+    },
+    {
+      "Name": "Disable Personalized Ads",
+      "Reset": false
+    },
+    {
+      "Name": "Disable Settings App Ads",
+      "Reset": false
+    },
+    {
+      "Name": "Disable Start Menu Ads",
+      "Reset": false
+    },
+    {
+      "Name": "Disable Tailored Experiences",
+      "Reset": false
+    },
+    {
+      "Name": "Disable Tips and Suggestions",
+      "Reset": false
+    },
+    {
+      "Name": "Disable Welcome Experience Ads",
+      "Reset": false
+    }
+  ],
+  "Apps": []
+}

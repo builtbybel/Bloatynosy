@@ -26,6 +26,10 @@ It is plain JSON in UTF-8. Three things decide whether it works:
 
 A key you delete falls back to English, so an unfinished file is a usable file.
 
+The order of the keys means nothing to the app, but the files are kept sorted so two languages can
+be read side by side: `_Language` first, the interface alphabetically, and the tweak keys below in
+their own block at the end. Adding a key in the wrong place breaks nothing.
+
 ## Where the text actually comes from
 
 This is the part that surprises people, and it is worth two minutes.
@@ -68,6 +72,15 @@ That is also why your file can be shorter than you expect and still be complete.
 Any other `.ini` dropped into `Data\` is read as well. Its tweaks are translated exactly the same
 way, because the key is the section name and nothing else. A plugin author can ship translations by
 sending you the two lines per section, no matter which file the section came from.
+
+A plugin may also invent a `Category=` no language file knows. Its card on the home page then shows
+the raw name out of the ini and no description underneath, which reads plainly enough. To give it a
+translated name and a line of its own, add `Where_<Category>` and `Why_<Category>`:
+
+```json
+"Where_Browser": "Browser",
+"Why_Browser": "Was der Browser von sich aus startet und meldet."
+```
 
 ## Keeping up
 

@@ -1,0 +1,18 @@
+{
+  "Name": "Quieter taskbar",
+  "Changes": [
+    {
+      "Name": "Align Taskbar Left",
+      "Reset": false
+    },
+    {
+      "Name": "Hide Search from Taskbar",
+      "Reset": false
+    },
+    {
+      "Name": "Disable Copilot on Taskbar",
+      "Reset": false
+    }
+  ],
+  "Apps": []
+}
