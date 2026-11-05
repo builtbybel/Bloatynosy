@@ -1,0 +1,27 @@
+{
+  "Name": "Less preinstalled",
+  "Changes": [],
+  "Apps": [
+    "Microsoft.MicrosoftOfficeHub_8wekyb3d8bbwe",
+    "Microsoft.MicrosoftSolitaireCollection_8wekyb3d8bbwe",
+    "Microsoft.BingNews_8wekyb3d8bbwe",
+    "Microsoft.BingWeather_8wekyb3d8bbwe",
+    "Microsoft.BingFinance_8wekyb3d8bbwe",
+    "Microsoft.BingSports_8wekyb3d8bbwe",
+    "Microsoft.SkypeApp_8wekyb3d8bbwe",
+    "Microsoft.GetHelp_8wekyb3d8bbwe",
+    "Microsoft.Getstarted_8wekyb3d8bbwe",
+    "Microsoft.WindowsFeedbackHub_8wekyb3d8bbwe",
+    "Microsoft.MixedReality.Portal_8wekyb3d8bbwe",
+    "Microsoft.3DBuilder_8wekyb3d8bbwe",
+    "Microsoft.Microsoft3DViewer_8wekyb3d8bbwe",
+    "Microsoft.People_8wekyb3d8bbwe",
+    "Microsoft.WindowsMaps_8wekyb3d8bbwe",
+    "Microsoft.Wallet_8wekyb3d8bbwe",
+    "Microsoft.549981C3F5F10_8wekyb3d8bbwe",
+    "MSTeams_8wekyb3d8bbwe",
+    "Clipchamp.Clipchamp_yxz26nhyzhsrt",
+    "BytedancePte.Ltd.TikTok_6yccndn6064se",
+    "Facebook.InstagramBeta_8xx8rvfyw5nnt"
+  ]
+}
