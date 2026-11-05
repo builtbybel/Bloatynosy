@@ -1,5 +1,11 @@
 [
   {
+    "File": "less-preinstalled.json",
+    "Name": "Less preinstalled",
+    "Author": "Belim",
+    "Description": "Remove apps Windows ships that nobody asked for: Solitaire, the Bing apps, Skype, Maps, Cortana, the Office hub, 3D Builder, Teams, Clipchamp, TikTok, Instagram, Threads."
+  },
+  {
     "File": "less-ads.json",
     "Name": "Less advertising",
     "Author": "Belim",
