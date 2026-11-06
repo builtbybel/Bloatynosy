@@ -1,0 +1,54 @@
+{
+  "Name": "Amnesia",
+  "Changes": [
+    {
+      "Name": "Disable Recall",
+      "Reset": false
+    },
+    {
+      "Name": "Disable Click To Do",
+      "Reset": false
+    },
+    {
+      "Name": "Disable AI Service Autostart",
+      "Reset": false
+    },
+    {
+      "Name": "Disable Copilot on Taskbar",
+      "Reset": false
+    },
+    {
+      "Name": "Disable Edge AI Features",
+      "Reset": false
+    },
+    {
+      "Name": "Disable Notepad AI Features",
+      "Reset": false
+    },
+    {
+      "Name": "Disable Search Box Suggestions",
+      "Reset": false
+    },
+    {
+      "Name": "Disable Bing Search in Start Menu",
+      "Reset": false
+    },
+    {
+      "Name": "Disable Activity History",
+      "Reset": false
+    },
+    {
+      "Name": "Disable App Launch Tracking",
+      "Reset": false
+    },
+    {
+      "Name": "Disable Online Speech Recognition",
+      "Reset": false
+    },
+    {
+      "Name": "Reduce Diagnostic Data",
+      "Reset": false
+    }
+  ],
+  "Apps": []
+}

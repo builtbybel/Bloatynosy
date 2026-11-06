@@ -1,9 +1,15 @@
 [
   {
+    "File": "amnesia.json",
+    "Name": "Amnesia",
+    "Author": "Belim",
+    "Description": "The opposite of Recall. Nothing photographs your screen, reads what is on it, or keeps a list of what you opened, and what you type into Start stays on the PC. Costs you Timeline, online dictation, Bing answers in Start and the assistants in Edge and Notepad."
+  },
+  {
     "File": "less-preinstalled.json",
     "Name": "Less preinstalled",
     "Author": "Belim",
-    "Description": "Remove apps Windows ships that nobody asked for: Solitaire, the Bing apps, Skype, Maps, Cortana, the Office hub, 3D Builder, Teams, Clipchamp, TikTok, Instagram, Threads."
+    "Description": "Remove the preinstalled apps nobody asked for, from Solitaire to TikTok."
   },
   {
     "File": "less-ads.json",
